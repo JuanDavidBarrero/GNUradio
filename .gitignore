@@ -1,3 +1,4 @@
 SourceSink/*.py
 MahtOperations/*.py
 Filters/*.py
+AudioFile/*.py
