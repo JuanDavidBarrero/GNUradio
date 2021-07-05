@@ -90,7 +90,7 @@ blocks:
     rot_sym: '4'
     soft_dec_lut: None
     sym_map: '[0,1]'
-    type: bpsk
+    type: 8psk
   states:
     bus_sink: false
     bus_source: false
@@ -105,7 +105,7 @@ blocks:
     alias: ''
     append: 'False'
     comment: ''
-    file: C:\Users\USUARIO\Downloads\JuanDavid.txt
+    file: C:\Users\USUARIO\Desktop\JuanDavid.txt
     type: byte
     unbuffered: 'False'
     vlen: '1'
@@ -113,7 +113,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [992, 532]
+    coordinate: [718, 388]
     rotation: 180
     state: enabled
 - name: blocks_repack_bits_bb_0_0_0
@@ -133,7 +133,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1213, 540]
+    coordinate: [955, 462]
     rotation: 180
     state: enabled
 - name: blocks_unpack_k_bits_bb_0_0_0
@@ -142,15 +142,15 @@ blocks:
     affinity: ''
     alias: ''
     comment: ''
-    k: '1'
+    k: '3'
     maxoutbuf: '0'
     minoutbuf: '0'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1299, 221]
-    rotation: 0
+    coordinate: [1390, 429]
+    rotation: 270
     state: enabled
 - name: digital_constellation_decoder_cb_1_0
   id: digital_constellation_decoder_cb
@@ -165,7 +165,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1065, 221]
+    coordinate: [1168, 147]
     rotation: 0
     state: enabled
 - name: digital_correlate_access_code_xx_ts_1
@@ -184,8 +184,8 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1395, 322]
-    rotation: 270
+    coordinate: [1152, 557]
+    rotation: 180
     state: enabled
 - name: digital_costas_loop_cc_2_0
   id: digital_costas_loop_cc
@@ -195,15 +195,31 @@ blocks:
     comment: ''
     maxoutbuf: '0'
     minoutbuf: '0'
-    order: '2'
+    order: '8'
     use_snr: 'True'
     w: '0.0628'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [590, 147]
+    coordinate: [672, 151]
     rotation: 0
+    state: enabled
+- name: digital_diff_decoder_bb_0
+  id: digital_diff_decoder_bb
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    modulus: '8'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1390, 228]
+    rotation: 270
     state: enabled
 - name: digital_lms_dd_equalizer_cc_0
   id: digital_lms_dd_equalizer_cc
@@ -215,13 +231,13 @@ blocks:
     maxoutbuf: '0'
     minoutbuf: '0'
     mu: '0.01'
-    num_taps: '15'
+    num_taps: '30'
     sps: '1'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [834, 197]
+    coordinate: [925, 123]
     rotation: 0
     state: enabled
 - name: digital_pfb_clock_sync_xxx_0
@@ -244,7 +260,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [304, 179]
+    coordinate: [373, 183]
     rotation: 0
     state: enabled
 - name: hdr_format
@@ -265,192 +281,8 @@ blocks:
     coordinate: [281, 26]
     rotation: 0
     state: enabled
-- name: qtgui_const_sink_x_0
-  id: qtgui_const_sink_x
-  parameters:
-    affinity: ''
-    alias: ''
-    alpha1: '1.0'
-    alpha10: '1.0'
-    alpha2: '1.0'
-    alpha3: '1.0'
-    alpha4: '1.0'
-    alpha5: '1.0'
-    alpha6: '1.0'
-    alpha7: '1.0'
-    alpha8: '1.0'
-    alpha9: '1.0'
-    autoscale: 'True'
-    axislabels: 'True'
-    color1: '"blue"'
-    color10: '"red"'
-    color2: '"red"'
-    color3: '"red"'
-    color4: '"red"'
-    color5: '"red"'
-    color6: '"red"'
-    color7: '"red"'
-    color8: '"red"'
-    color9: '"red"'
-    comment: ''
-    grid: 'True'
-    gui_hint: ''
-    label1: ''
-    label10: ''
-    label2: ''
-    label3: ''
-    label4: ''
-    label5: ''
-    label6: ''
-    label7: ''
-    label8: ''
-    label9: ''
-    legend: 'True'
-    marker1: '0'
-    marker10: '0'
-    marker2: '0'
-    marker3: '0'
-    marker4: '0'
-    marker5: '0'
-    marker6: '0'
-    marker7: '0'
-    marker8: '0'
-    marker9: '0'
-    name: '""'
-    nconnections: '1'
-    size: '1024'
-    style1: '0'
-    style10: '0'
-    style2: '0'
-    style3: '0'
-    style4: '0'
-    style5: '0'
-    style6: '0'
-    style7: '0'
-    style8: '0'
-    style9: '0'
-    tr_chan: '0'
-    tr_level: '0.0'
-    tr_mode: qtgui.TRIG_MODE_FREE
-    tr_slope: qtgui.TRIG_SLOPE_POS
-    tr_tag: '""'
-    type: complex
-    update_time: '0.10'
-    width1: '1'
-    width10: '1'
-    width2: '1'
-    width3: '1'
-    width4: '1'
-    width5: '1'
-    width6: '1'
-    width7: '1'
-    width8: '1'
-    width9: '1'
-    xmax: '2'
-    xmin: '-2'
-    ymax: '2'
-    ymin: '-2'
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [1085, 286]
-    rotation: 0
-    state: true
-- name: qtgui_const_sink_x_0_0
-  id: qtgui_const_sink_x
-  parameters:
-    affinity: ''
-    alias: ''
-    alpha1: '1.0'
-    alpha10: '1.0'
-    alpha2: '1.0'
-    alpha3: '1.0'
-    alpha4: '1.0'
-    alpha5: '1.0'
-    alpha6: '1.0'
-    alpha7: '1.0'
-    alpha8: '1.0'
-    alpha9: '1.0'
-    autoscale: 'True'
-    axislabels: 'True'
-    color1: '"blue"'
-    color10: '"red"'
-    color2: '"red"'
-    color3: '"red"'
-    color4: '"red"'
-    color5: '"red"'
-    color6: '"red"'
-    color7: '"red"'
-    color8: '"red"'
-    color9: '"red"'
-    comment: ''
-    grid: 'True'
-    gui_hint: ''
-    label1: ''
-    label10: ''
-    label2: ''
-    label3: ''
-    label4: ''
-    label5: ''
-    label6: ''
-    label7: ''
-    label8: ''
-    label9: ''
-    legend: 'True'
-    marker1: '0'
-    marker10: '0'
-    marker2: '0'
-    marker3: '0'
-    marker4: '0'
-    marker5: '0'
-    marker6: '0'
-    marker7: '0'
-    marker8: '0'
-    marker9: '0'
-    name: '""'
-    nconnections: '1'
-    size: '1024'
-    style1: '0'
-    style10: '0'
-    style2: '0'
-    style3: '0'
-    style4: '0'
-    style5: '0'
-    style6: '0'
-    style7: '0'
-    style8: '0'
-    style9: '0'
-    tr_chan: '0'
-    tr_level: '0.0'
-    tr_mode: qtgui.TRIG_MODE_FREE
-    tr_slope: qtgui.TRIG_SLOPE_POS
-    tr_tag: '""'
-    type: complex
-    update_time: '0.10'
-    width1: '1'
-    width10: '1'
-    width2: '1'
-    width3: '1'
-    width4: '1'
-    width5: '1'
-    width6: '1'
-    width7: '1'
-    width8: '1'
-    width9: '1'
-    xmax: '2'
-    xmin: '-2'
-    ymax: '2'
-    ymin: '-2'
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [321, 378]
-    rotation: 0
-    state: true
-- name: rtlsdr_source_0
-  id: rtlsdr_source
+- name: osmosdr_source_0_0
+  id: osmosdr_source
   parameters:
     affinity: ''
     alias: ''
@@ -486,7 +318,7 @@ blocks:
     ant7: ''
     ant8: ''
     ant9: ''
-    args: '""'
+    args: ''
     bb_gain0: '20'
     bb_gain1: '20'
     bb_gain10: '20'
@@ -656,7 +488,7 @@ blocks:
     freq7: 100e6
     freq8: 100e6
     freq9: 100e6
-    gain0: '20'
+    gain0: '25'
     gain1: '10'
     gain10: '10'
     gain11: '10'
@@ -788,8 +620,8 @@ blocks:
     minoutbuf: '0'
     nchan: '1'
     num_mboards: '1'
-    sample_rate: 1e6
-    sync: sync
+    sample_rate: 44100*50
+    sync: none
     time_source0: ''
     time_source1: ''
     time_source2: ''
@@ -803,21 +635,206 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [40, 147]
+    coordinate: [70, 151]
+    rotation: 0
+    state: enabled
+- name: qtgui_const_sink_x_0
+  id: qtgui_const_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    axislabels: 'True'
+    color1: '"blue"'
+    color10: '"red"'
+    color2: '"red"'
+    color3: '"red"'
+    color4: '"red"'
+    color5: '"red"'
+    color6: '"red"'
+    color7: '"red"'
+    color8: '"red"'
+    color9: '"red"'
+    comment: ''
+    grid: 'True'
+    gui_hint: ''
+    label1: ''
+    label10: ''
+    label2: ''
+    label3: ''
+    label4: ''
+    label5: ''
+    label6: ''
+    label7: ''
+    label8: ''
+    label9: ''
+    legend: 'True'
+    marker1: '0'
+    marker10: '0'
+    marker2: '0'
+    marker3: '0'
+    marker4: '0'
+    marker5: '0'
+    marker6: '0'
+    marker7: '0'
+    marker8: '0'
+    marker9: '0'
+    name: Final
+    nconnections: '1'
+    size: '1024'
+    style1: '0'
+    style10: '0'
+    style2: '0'
+    style3: '0'
+    style4: '0'
+    style5: '0'
+    style6: '0'
+    style7: '0'
+    style8: '0'
+    style9: '0'
+    tr_chan: '0'
+    tr_level: '0.0'
+    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_slope: qtgui.TRIG_SLOPE_POS
+    tr_tag: '""'
+    type: complex
+    update_time: '0.10'
+    width1: '1'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    xmax: '2'
+    xmin: '-2'
+    ymax: '2'
+    ymin: '-2'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1128, 216]
+    rotation: 0
+    state: true
+- name: qtgui_const_sink_x_0_0
+  id: qtgui_const_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    axislabels: 'True'
+    color1: '"blue"'
+    color10: '"red"'
+    color2: '"red"'
+    color3: '"red"'
+    color4: '"red"'
+    color5: '"red"'
+    color6: '"red"'
+    color7: '"red"'
+    color8: '"red"'
+    color9: '"red"'
+    comment: ''
+    grid: 'True'
+    gui_hint: ''
+    label1: ''
+    label10: ''
+    label2: ''
+    label3: ''
+    label4: ''
+    label5: ''
+    label6: ''
+    label7: ''
+    label8: ''
+    label9: ''
+    legend: 'True'
+    marker1: '0'
+    marker10: '0'
+    marker2: '0'
+    marker3: '0'
+    marker4: '0'
+    marker5: '0'
+    marker6: '0'
+    marker7: '0'
+    marker8: '0'
+    marker9: '0'
+    name: '"RTL"'
+    nconnections: '1'
+    size: '1024'
+    style1: '0'
+    style10: '0'
+    style2: '0'
+    style3: '0'
+    style4: '0'
+    style5: '0'
+    style6: '0'
+    style7: '0'
+    style8: '0'
+    style9: '0'
+    tr_chan: '0'
+    tr_level: '0.0'
+    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_slope: qtgui.TRIG_SLOPE_POS
+    tr_tag: '""'
+    type: complex
+    update_time: '0.10'
+    width1: '1'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    xmax: '2'
+    xmin: '-2'
+    ymax: '2'
+    ymin: '-2'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [332, 379]
     rotation: 0
     state: true
 
 connections:
 - [blocks_repack_bits_bb_0_0_0, '0', blocks_file_sink_0_0_0, '0']
 - [blocks_unpack_k_bits_bb_0_0_0, '0', digital_correlate_access_code_xx_ts_1, '0']
-- [digital_constellation_decoder_cb_1_0, '0', blocks_unpack_k_bits_bb_0_0_0, '0']
+- [digital_constellation_decoder_cb_1_0, '0', digital_diff_decoder_bb_0, '0']
 - [digital_correlate_access_code_xx_ts_1, '0', blocks_repack_bits_bb_0_0_0, '0']
 - [digital_costas_loop_cc_2_0, '0', digital_lms_dd_equalizer_cc_0, '0']
+- [digital_diff_decoder_bb_0, '0', blocks_unpack_k_bits_bb_0_0_0, '0']
 - [digital_lms_dd_equalizer_cc_0, '0', digital_constellation_decoder_cb_1_0, '0']
 - [digital_lms_dd_equalizer_cc_0, '0', qtgui_const_sink_x_0, '0']
 - [digital_pfb_clock_sync_xxx_0, '0', digital_costas_loop_cc_2_0, '0']
-- [rtlsdr_source_0, '0', digital_pfb_clock_sync_xxx_0, '0']
-- [rtlsdr_source_0, '0', qtgui_const_sink_x_0_0, '0']
+- [osmosdr_source_0_0, '0', digital_pfb_clock_sync_xxx_0, '0']
+- [osmosdr_source_0_0, '0', qtgui_const_sink_x_0_0, '0']
 
 metadata:
   file_format: 1
