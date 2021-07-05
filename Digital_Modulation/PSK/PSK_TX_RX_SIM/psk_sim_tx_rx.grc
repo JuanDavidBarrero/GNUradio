@@ -105,7 +105,7 @@ blocks:
     alias: ''
     append: 'False'
     comment: ''
-    file: C:\Users\USUARIO\Downloads\JuanDavid.txt
+    file: C:\Users\JuanD\Downloads\Bayona.txt
     type: byte
     unbuffered: 'False'
     vlen: '1'
@@ -123,7 +123,7 @@ blocks:
     alias: ''
     begin_tag: pmt.PMT_NIL
     comment: ''
-    file: C:\Users\USUARIO\Downloads\hola.txt
+    file: C:\Users\JuanD\Downloads\hola.txt
     length: '0'
     maxoutbuf: '0'
     minoutbuf: '0'
