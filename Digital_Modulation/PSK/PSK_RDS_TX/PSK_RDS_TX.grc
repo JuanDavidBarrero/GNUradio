@@ -90,7 +90,7 @@ blocks:
     rot_sym: '4'
     soft_dec_lut: None
     sym_map: '[0,1]'
-    type: qpsk
+    type: bpsk
   states:
     bus_sink: false
     bus_source: false
@@ -105,7 +105,7 @@ blocks:
     alias: ''
     begin_tag: pmt.PMT_NIL
     comment: ''
-    file: C:\Users\USUARIO\Downloads\hola.txt
+    file: C:\Users\JuanD\Downloads\hola.txt
     length: '0'
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -184,7 +184,7 @@ blocks:
     alias: ''
     comment: ''
     constellation: variable_constellation_1
-    differential: 'False'
+    differential: 'True'
     excess_bw: '0.35'
     log: 'False'
     maxoutbuf: '0'
@@ -408,7 +408,7 @@ blocks:
     freq7: 100e6
     freq8: 100e6
     freq9: 100e6
-    gain0: '10'
+    gain0: '30'
     gain1: '10'
     gain10: '10'
     gain11: '10'
@@ -440,7 +440,7 @@ blocks:
     gain7: '10'
     gain8: '10'
     gain9: '10'
-    if_gain0: '20'
+    if_gain0: '30'
     if_gain1: '20'
     if_gain10: '20'
     if_gain11: '20'
@@ -476,7 +476,7 @@ blocks:
     minoutbuf: '0'
     nchan: '1'
     num_mboards: '1'
-    sample_rate: '25600'
+    sample_rate: 1e6
     sync: sync
     time_source0: ''
     time_source1: ''
