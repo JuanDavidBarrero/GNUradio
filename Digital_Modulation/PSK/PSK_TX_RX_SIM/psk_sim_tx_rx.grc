@@ -90,7 +90,7 @@ blocks:
     rot_sym: '4'
     soft_dec_lut: None
     sym_map: '[0,1]'
-    type: 8psk
+    type: 16qam
   states:
     bus_sink: false
     bus_source: false
