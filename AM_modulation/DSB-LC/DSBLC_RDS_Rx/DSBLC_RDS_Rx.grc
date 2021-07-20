@@ -104,7 +104,7 @@ blocks:
     affinity: ''
     alias: ''
     amp: '1'
-    comment: ''
+    comment: "Se\xF1al portadora"
     freq: '5000'
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -117,7 +117,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [407, 379]
+    coordinate: [405, 365]
     rotation: 0
     state: true
 - name: blocks_add_xx_0
@@ -135,7 +135,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [810, 259]
+    coordinate: [797, 246]
     rotation: 0
     state: true
 - name: blocks_float_to_complex_0
@@ -169,7 +169,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [242, 188]
+    coordinate: [244, 226]
     rotation: 0
     state: true
 - name: blocks_multiply_xx_0
@@ -187,7 +187,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [644, 253]
+    coordinate: [631, 230]
     rotation: 0
     state: true
 - name: blocks_wavfile_source_0
@@ -195,7 +195,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: "Selecione un audio que este \nen el PC !"
     file: C:\Users\JuanD\Downloads\test.wav
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -205,7 +205,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [38, 214]
+    coordinate: [29, 218]
     rotation: 0
     state: true
 - name: low_pass_filter_0
@@ -229,7 +229,33 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [433, 168]
+    coordinate: [426, 182]
+    rotation: 0
+    state: true
+- name: note_0
+  id: note
+  parameters:
+    alias: ''
+    comment: ''
+    note: "Modulaci\xF3n AM DSBLC"
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [447, 112]
+    rotation: 0
+    state: true
+- name: note_0_0
+  id: note
+  parameters:
+    alias: ''
+    comment: ''
+    note: "Transmici\xF3n con RDS AM DSBLC"
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [56, 514]
     rotation: 0
     state: true
 - name: osmosdr_sink_0
@@ -342,7 +368,8 @@ blocks:
     clock_source5: ''
     clock_source6: ''
     clock_source7: ''
-    comment: ''
+    comment: "Bloque para transmitir la se\xF1al utilizando \nel HackRF, en los parametros\
+      \ de arriba estan\nlos valores de la frecuencia a la cual se esta \ntransmitiendo"
     corr0: '0'
     corr1: '0'
     corr10: '0'
@@ -490,7 +517,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [732, 628]
+    coordinate: [717, 553]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0
@@ -570,7 +597,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [951, 293]
+    coordinate: [948, 262]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0
@@ -667,7 +694,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [919, 420]
+    coordinate: [920, 387]
     rotation: 0
     state: true
 - name: rational_resampler_xxx_0
@@ -675,7 +702,8 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: "Aumenta el n\xFAmero de muestra para mejorar\nla calidad a la hora e\
+      \ recibir la se\xF1al \ntransmitida"
     decim: '1'
     fbw: '0'
     interp: upSample
@@ -687,7 +715,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [469, 630]
+    coordinate: [430, 596]
     rotation: 0
     state: true
 - name: virtual_sink_0
@@ -700,7 +728,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [959, 183]
+    coordinate: [919, 169]
     rotation: 0
     state: true
 - name: virtual_source_0

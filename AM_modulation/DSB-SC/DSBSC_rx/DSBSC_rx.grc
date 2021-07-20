@@ -104,6 +104,18 @@ blocks:
     coordinate: [277, 15]
     rotation: 0
     state: true
+- name: freq_portadora
+  id: variable
+  parameters:
+    comment: ''
+    value: 10e3
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [620, 13]
+    rotation: 0
+    state: enabled
 - name: samp_rate
   id: variable
   parameters:
@@ -135,7 +147,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [50, 230]
+    coordinate: [51, 214]
     rotation: 0
     state: true
 - name: analog_sig_source_x_1
@@ -144,8 +156,8 @@ blocks:
     affinity: ''
     alias: ''
     amp: amp + 1
-    comment: ''
-    freq: 10e3
+    comment: "Se\xF1al portadora"
+    freq: freq_portadora
     maxoutbuf: '0'
     minoutbuf: '0'
     offset: '0'
@@ -157,7 +169,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [511, 436]
+    coordinate: [461, 411]
     rotation: 0
     state: true
 - name: analog_sig_source_x_1_0
@@ -166,8 +178,8 @@ blocks:
     affinity: ''
     alias: ''
     amp: amp + 1
-    comment: ''
-    freq: 10e3
+    comment: "Se\xF1al portadora para recuperar la se\xF1al"
+    freq: freq_portadora
     maxoutbuf: '0'
     minoutbuf: '0'
     offset: '0'
@@ -179,7 +191,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [66, 761]
+    coordinate: [39, 780]
     rotation: 0
     state: true
 - name: audio_sink_0
@@ -196,7 +208,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1119, 812]
+    coordinate: [1156, 869]
     rotation: 0
     state: true
 - name: blocks_multiply_const_xx_0
@@ -214,7 +226,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [971, 578]
+    coordinate: [934, 726]
     rotation: 0
     state: true
 - name: blocks_multiply_const_xx_0_0
@@ -232,7 +244,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [917, 801]
+    coordinate: [926, 869]
     rotation: 0
     state: true
 - name: blocks_multiply_xx_0
@@ -250,7 +262,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [734, 288]
+    coordinate: [663, 290]
     rotation: 0
     state: true
 - name: blocks_multiply_xx_0_0
@@ -268,7 +280,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [326, 684]
+    coordinate: [278, 714]
     rotation: 0
     state: true
 - name: blocks_selector_0
@@ -291,7 +303,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [506, 264]
+    coordinate: [459, 254]
     rotation: 0
     state: true
 - name: blocks_selector_0_0
@@ -299,7 +311,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: "Selector para poder recibir la el tono\no la se\xF1al de audio"
     enabled: 'True'
     input_index: '0'
     maxoutbuf: '0'
@@ -314,7 +326,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [474, 672]
+    coordinate: [412, 710]
     rotation: 0
     state: true
 - name: blocks_throttle_0
@@ -333,7 +345,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [292, 257]
+    coordinate: [276, 254]
     rotation: 0
     state: true
 - name: blocks_wavfile_source_0
@@ -341,8 +353,8 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
-    file: C:\Users\USUARIO\Desktop\JuanDavid\gnu_radio\audio_44100.wav
+    comment: El audio debe estar en el PC
+    file: C:\Users\JuanD\Downloads\test.wav
     maxoutbuf: '0'
     minoutbuf: '0'
     nchan: '1'
@@ -351,7 +363,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [39, 457]
+    coordinate: [32, 375]
     rotation: 0
     state: true
 - name: low_pass_filter_0
@@ -375,7 +387,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [265, 381]
+    coordinate: [245, 339]
     rotation: 0
     state: true
 - name: low_pass_filter_1
@@ -399,7 +411,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [722, 761]
+    coordinate: [716, 825]
     rotation: 0
     state: true
 - name: low_pass_filter_1_0
@@ -423,7 +435,46 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [758, 594]
+    coordinate: [722, 682]
+    rotation: 0
+    state: true
+- name: note_0
+  id: note
+  parameters:
+    alias: ''
+    comment: ''
+    note: "Modulaci\xF3n AM transmisor"
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [421, 179]
+    rotation: 0
+    state: true
+- name: note_1
+  id: note
+  parameters:
+    alias: ''
+    comment: ''
+    note: "Modulaci\xF3n AM receptor"
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [363, 628]
+    rotation: 0
+    state: true
+- name: note_2
+  id: note
+  parameters:
+    alias: ''
+    comment: ''
+    note: Permite manejar el volumen
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [914, 675]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0
@@ -503,7 +554,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [906, 395]
+    coordinate: [825, 391]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0_0
@@ -535,7 +586,7 @@ blocks:
     color7: '"yellow"'
     color8: '"dark red"'
     color9: '"dark green"'
-    comment: ''
+    comment: Espectro del tono despues del filtro
     ctrlpanel: 'False'
     fc: '0'
     fftsize: '1024'
@@ -556,7 +607,7 @@ blocks:
     legend: 'True'
     maxoutbuf: '0'
     minoutbuf: '0'
-    name: "\"Espectro de se\xF1al recuperada AM DSB-SC\""
+    name: "\"Espectro de se\xF1al recuperada AM DSB-SC Tono\""
     nconnections: '1'
     showports: 'False'
     tr_chan: '0'
@@ -583,7 +634,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1162, 653]
+    coordinate: [1151, 730]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0_0_0
@@ -615,7 +666,7 @@ blocks:
     color7: '"yellow"'
     color8: '"dark red"'
     color9: '"dark green"'
-    comment: ''
+    comment: "Permite obsevar el comportamiendo de la se\xF1al antes del filtro"
     ctrlpanel: 'False'
     fc: '0'
     fftsize: '1024'
@@ -663,7 +714,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [709, 940]
+    coordinate: [696, 996]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0_0_1
@@ -695,7 +746,7 @@ blocks:
     color7: '"yellow"'
     color8: '"dark red"'
     color9: '"dark green"'
-    comment: ''
+    comment: Espectro del audio despues del filtro
     ctrlpanel: 'False'
     fc: '0'
     fftsize: '1024'
@@ -743,7 +794,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1083, 929]
+    coordinate: [1130, 934]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0
@@ -840,7 +891,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [905, 255]
+    coordinate: [830, 279]
     rotation: 0
     state: true
 - name: virtual_sink_0
@@ -853,7 +904,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [912, 171]
+    coordinate: [812, 229]
     rotation: 0
     state: true
 - name: virtual_source_0
@@ -866,7 +917,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [58, 666]
+    coordinate: [85, 710]
     rotation: 0
     state: true
 

@@ -35,7 +35,7 @@ blocks:
 - name: choose
   id: variable_qtgui_chooser
   parameters:
-    comment: ''
+    comment: Permite escoger el mensaje que se quiera oir
     gui_hint: ''
     label: mensaje
     label0: msg1
@@ -59,7 +59,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [28, 413]
+    coordinate: [28, 433]
     rotation: 0
     state: true
 - name: downSample
@@ -113,7 +113,7 @@ blocks:
 - name: vol
   id: variable_qtgui_range
   parameters:
-    comment: ''
+    comment: Permite ajutar el volumen del audio
     gui_hint: ''
     label: volumen
     min_len: '200'
@@ -128,7 +128,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [136, 413]
+    coordinate: [143, 432]
     rotation: 0
     state: true
 - name: analog_sig_source_x_0
@@ -189,15 +189,15 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1467, 259]
-    rotation: 0
+    coordinate: [1225, 478]
+    rotation: 180
     state: true
 - name: blocks_complex_to_mag_0
   id: blocks_complex_to_mag
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: "convierte la se\xF1al compleja en una se\xF1al \nflotante"
     maxoutbuf: '0'
     minoutbuf: '0'
     vlen: '1'
@@ -205,7 +205,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1184, 288]
+    coordinate: [1185, 268]
     rotation: 0
     state: true
 - name: blocks_multiply_const_xx_0
@@ -223,8 +223,8 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1323, 206]
-    rotation: 0
+    coordinate: [1419, 352]
+    rotation: 270
     state: true
 - name: blocks_multiply_xx_0
   id: blocks_multiply_xx
@@ -241,7 +241,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [570, 272]
+    coordinate: [594, 338]
     rotation: 0
     state: true
 - name: blocks_multiply_xx_0_0
@@ -259,7 +259,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [570, 185]
+    coordinate: [601, 128]
     rotation: 0
     state: true
 - name: blocks_selector_0
@@ -267,7 +267,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: Selecionar el mensaje que se quiere oir
     enabled: 'True'
     input_index: choose
     maxoutbuf: '0'
@@ -282,7 +282,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [985, 219]
+    coordinate: [986, 232]
     rotation: 0
     state: true
 - name: low_pass_filter_0
@@ -306,7 +306,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [750, 99]
+    coordinate: [756, 96]
     rotation: 0
     state: true
 - name: low_pass_filter_0_0
@@ -330,7 +330,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [743, 299]
+    coordinate: [747, 306]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0
@@ -410,7 +410,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1382, 345]
+    coordinate: [1392, 126]
     rotation: 0
     state: true
 - name: rational_resampler_xxx_0
@@ -430,7 +430,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [358, 218]
+    coordinate: [356, 217]
     rotation: 0
     state: true
 - name: rtlsdr_source_0
@@ -543,7 +543,8 @@ blocks:
     clock_source5: ''
     clock_source6: ''
     clock_source7: ''
-    comment: ''
+    comment: "Bloque receptor este tiene la \nmisma tasa de muestreo que se \najusto\
+      \ en el transmisor"
     corr0: '0'
     corr1: '0'
     corr10: '0'

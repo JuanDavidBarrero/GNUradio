@@ -117,7 +117,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [599, 254]
+    coordinate: [552, 287]
     rotation: 0
     state: true
 - name: audio_sink_0
@@ -134,7 +134,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [963, 175]
+    coordinate: [971, 224]
     rotation: 0
     state: true
 - name: blocks_multiply_const_xx_0
@@ -142,7 +142,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: "Permite ajutar el volumen de la \nse\xF1al ya recuperada"
     const: vol
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -152,7 +152,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [761, 215]
+    coordinate: [781, 311]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0
@@ -232,7 +232,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [804, 415]
+    coordinate: [754, 408]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0
@@ -329,7 +329,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [918, 302]
+    coordinate: [993, 287]
     rotation: 0
     state: true
 - name: rational_resampler_xxx_0
@@ -337,7 +337,8 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: "Diminuye el n\xFAmero de muestra para \npoder oir la se\xF1al utilizando\
+      \ los parlantes\ndel equipo"
     decim: downSample
     fbw: '0'
     interp: '1'
@@ -349,7 +350,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [386, 206]
+    coordinate: [343, 287]
     rotation: 0
     state: true
 - name: rtlsdr_source_0
@@ -462,7 +463,8 @@ blocks:
     clock_source5: ''
     clock_source6: ''
     clock_source7: ''
-    comment: ''
+    comment: "Bloque para recibir la se\xF1al envidada, \nesta cuadrado para captar\
+      \ la se\xF1al enviada \nen la frecuencia 150[MHz]"
     corr0: '0'
     corr1: '0'
     corr10: '0'
@@ -706,7 +708,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [101, 185]
+    coordinate: [59, 235]
     rotation: 0
     state: true
 

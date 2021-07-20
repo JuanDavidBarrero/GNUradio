@@ -50,13 +50,14 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [411, 11]
+    coordinate: [174, 81]
     rotation: 0
     state: true
 - name: chooser
   id: variable_qtgui_chooser
   parameters:
-    comment: ''
+    comment: "Permite escoger la se\xF1al moduladora \nse puede escoger entre \nTono\
+      \     \t|         Audio"
     gui_hint: ''
     label: Tono  o Audio
     label0: Tomo
@@ -80,13 +81,13 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [524, 14]
+    coordinate: [505, 16]
     rotation: 0
     state: true
 - name: freq
   id: variable_qtgui_range
   parameters:
-    comment: ''
+    comment: "Permite cambiar la frecuancia de la se\xF1al \nmoduladora (TONO)"
     gui_hint: ''
     label: frecuencia
     min_len: '200'
@@ -101,7 +102,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [290, 9]
+    coordinate: [287, 22]
     rotation: 0
     state: true
 - name: samp_rate
@@ -122,7 +123,7 @@ blocks:
     affinity: ''
     alias: ''
     amp: amp
-    comment: ''
+    comment: "Tono de la se\xF1al, esta se puede variar\ncon el slider"
     freq: freq
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -135,7 +136,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [52, 191]
+    coordinate: [64, 247]
     rotation: 0
     state: true
 - name: analog_sig_source_x_1
@@ -144,7 +145,8 @@ blocks:
     affinity: ''
     alias: ''
     amp: amp + 1
-    comment: ''
+    comment: "Se\xF1al portadora, esta debe tener una \nfrecuancia mayor a la de la\
+      \ moduladora"
     freq: 10e3
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -157,7 +159,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [470, 482]
+    coordinate: [495, 468]
     rotation: 0
     state: true
 - name: audio_sink_0
@@ -165,7 +167,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: Si se quiere comentar pulse la telca D
     device_name: ''
     num_inputs: '1'
     ok_to_block: 'True'
@@ -174,7 +176,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [893, 145]
+    coordinate: [917, 243]
     rotation: 0
     state: disabled
 - name: blocks_multiply_xx_0
@@ -192,7 +194,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [707, 295]
+    coordinate: [724, 324]
     rotation: 0
     state: true
 - name: blocks_selector_0
@@ -215,7 +217,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [508, 225]
+    coordinate: [502, 288]
     rotation: 0
     state: true
 - name: blocks_throttle_0
@@ -234,7 +236,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [294, 218]
+    coordinate: [288, 287]
     rotation: 0
     state: true
 - name: blocks_wavfile_source_0
@@ -242,8 +244,10 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
-    file: C:\Users\USUARIO\Desktop\JuanDavid\gnu_radio\audio_44100.wav
+    comment: 'El audio debe estar
+
+      en su PC !'
+    file: C:\Users\JuanD\Downloads\test.wav
     maxoutbuf: '0'
     minoutbuf: '0'
     nchan: '1'
@@ -252,7 +256,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [41, 418]
+    coordinate: [64, 414]
     rotation: 0
     state: true
 - name: low_pass_filter_0
@@ -276,7 +280,20 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [267, 342]
+    coordinate: [291, 378]
+    rotation: 0
+    state: true
+- name: note_0
+  id: note
+  parameters:
+    alias: ''
+    comment: ''
+    note: Para habilitar el bloque de audio presionar la tecla E
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [897, 187]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0
@@ -356,7 +373,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [892, 409]
+    coordinate: [923, 427]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0
@@ -453,7 +470,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [888, 249]
+    coordinate: [914, 313]
     rotation: 0
     state: true
 

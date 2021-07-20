@@ -51,7 +51,7 @@ blocks:
     affinity: ''
     alias: ''
     amp: '1'
-    comment: ''
+    comment: "Se\xF1al portadora coseno"
     freq: 10e3
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -64,7 +64,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [451, 285]
+    coordinate: [436, 283]
     rotation: 0
     state: true
 - name: analog_sig_source_x_0_0_0
@@ -73,7 +73,7 @@ blocks:
     affinity: ''
     alias: ''
     amp: '1'
-    comment: ''
+    comment: "Se\xF1al portadora seno"
     freq: 10e3
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -86,7 +86,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [438, 444]
+    coordinate: [438, 436]
     rotation: 0
     state: true
 - name: blocks_add_xx_0
@@ -104,7 +104,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [845, 254]
+    coordinate: [815, 170]
     rotation: 0
     state: true
 - name: blocks_add_xx_0_0
@@ -122,7 +122,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [831, 486]
+    coordinate: [794, 576]
     rotation: 0
     state: true
 - name: blocks_add_xx_0_0_0
@@ -140,7 +140,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [962, 374]
+    coordinate: [993, 362]
     rotation: 0
     state: true
 - name: blocks_float_to_complex_0
@@ -156,7 +156,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [995, 226]
+    coordinate: [1178, 47]
     rotation: 0
     state: true
 - name: blocks_multiply_const_xx_0
@@ -174,7 +174,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [266, 196]
+    coordinate: [272, 150]
     rotation: 0
     state: true
 - name: blocks_multiply_const_xx_0_0
@@ -210,7 +210,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [706, 238]
+    coordinate: [671, 154]
     rotation: 0
     state: true
 - name: blocks_multiply_xx_0_0
@@ -228,7 +228,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [693, 538]
+    coordinate: [649, 592]
     rotation: 0
     state: true
 - name: blocks_wavfile_source_0
@@ -236,7 +236,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: "Seleciona una se\xF1al de audio \nque este en su computador"
     file: C:\Users\JuanD\Downloads\test.wav
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -254,7 +254,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: "Seleciona una se\xF1al de audio \nque este en su computador"
     file: C:\Users\JuanD\Downloads\test2.wav
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -264,7 +264,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [36, 592]
+    coordinate: [34, 628]
     rotation: 0
     state: true
 - name: low_pass_filter_0
@@ -288,7 +288,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [474, 129]
+    coordinate: [463, 106]
     rotation: 0
     state: true
 - name: low_pass_filter_0_0
@@ -313,6 +313,20 @@ blocks:
     bus_source: false
     bus_structure: null
     coordinate: [458, 576]
+    rotation: 0
+    state: true
+- name: note_0
+  id: note
+  parameters:
+    alias: ''
+    comment: Por favor leer
+    note: "Para que funcione esta transmisi\xF3n en necesario colocar se\xF1ales que\
+      \ sea ortogonales entre si"
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [189, 371]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0
@@ -392,7 +406,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1113, 469]
+    coordinate: [1124, 460]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0
@@ -489,7 +503,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1222, 213]
+    coordinate: [1371, 35]
     rotation: 0
     state: true
 - name: virtual_sink_0
@@ -502,7 +516,59 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1073, 330]
+    coordinate: [1127, 375]
+    rotation: 0
+    state: true
+- name: virtual_sink_1
+  id: virtual_sink
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: msg1
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [957, 181]
+    rotation: 0
+    state: true
+- name: virtual_sink_2
+  id: virtual_sink
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: msg2
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [934, 588]
+    rotation: 0
+    state: true
+- name: virtual_source_0
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: msg1
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1002, 43]
+    rotation: 0
+    state: true
+- name: virtual_source_1
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: msg2
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [999, 91]
     rotation: 0
     state: true
 
@@ -512,9 +578,9 @@ connections:
 - [analog_sig_source_x_0_0_0, '0', blocks_add_xx_0_0, '0']
 - [analog_sig_source_x_0_0_0, '0', blocks_multiply_xx_0_0, '0']
 - [blocks_add_xx_0, '0', blocks_add_xx_0_0_0, '0']
-- [blocks_add_xx_0, '0', blocks_float_to_complex_0, '0']
+- [blocks_add_xx_0, '0', virtual_sink_1, '0']
 - [blocks_add_xx_0_0, '0', blocks_add_xx_0_0_0, '1']
-- [blocks_add_xx_0_0, '0', blocks_float_to_complex_0, '1']
+- [blocks_add_xx_0_0, '0', virtual_sink_2, '0']
 - [blocks_add_xx_0_0_0, '0', qtgui_freq_sink_x_0, '0']
 - [blocks_add_xx_0_0_0, '0', virtual_sink_0, '0']
 - [blocks_float_to_complex_0, '0', qtgui_time_sink_x_0, '0']
@@ -526,6 +592,8 @@ connections:
 - [blocks_wavfile_source_0_0, '0', blocks_multiply_const_xx_0_0, '0']
 - [low_pass_filter_0, '0', blocks_multiply_xx_0, '0']
 - [low_pass_filter_0_0, '0', blocks_multiply_xx_0_0, '1']
+- [virtual_source_0, '0', blocks_float_to_complex_0, '0']
+- [virtual_source_1, '0', blocks_float_to_complex_0, '1']
 
 metadata:
   file_format: 1

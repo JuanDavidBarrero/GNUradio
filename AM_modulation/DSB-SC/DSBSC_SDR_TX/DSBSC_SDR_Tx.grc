@@ -178,7 +178,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [110, 754]
+    coordinate: [71, 758]
     rotation: 0
     state: true
 - name: analog_sig_source_x_0
@@ -200,7 +200,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [38, 174]
+    coordinate: [71, 228]
     rotation: 0
     state: true
 - name: analog_sig_source_x_1
@@ -209,7 +209,7 @@ blocks:
     affinity: ''
     alias: ''
     amp: amp + 1
-    comment: ''
+    comment: "Se\xF1al portadora"
     freq: 10e3
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -222,7 +222,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [482, 428]
+    coordinate: [521, 442]
     rotation: 0
     state: true
 - name: blocks_float_to_complex_0
@@ -230,7 +230,8 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: "Permite hacer la conversi\xF3n de una se\xF1al \nflotante a una se\xF1\
+      al compleja"
     maxoutbuf: '0'
     minoutbuf: '0'
     vlen: '1'
@@ -238,7 +239,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [281, 658]
+    coordinate: [260, 670]
     rotation: 0
     state: true
 - name: blocks_multiply_xx_0
@@ -256,7 +257,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [689, 299]
+    coordinate: [722, 304]
     rotation: 0
     state: true
 - name: blocks_selector_0
@@ -279,7 +280,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [492, 219]
+    coordinate: [499, 268]
     rotation: 0
     state: true
 - name: blocks_throttle_0
@@ -298,7 +299,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [256, 216]
+    coordinate: [302, 268]
     rotation: 0
     state: true
 - name: blocks_wavfile_source_0
@@ -306,7 +307,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: El archivo de audio debe estar en el PC
     file: C:\Users\USUARIO\Desktop\JuanDavid\gnu_radio\audio_44100.wav
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -316,7 +317,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [21, 382]
+    coordinate: [69, 418]
     rotation: 0
     state: true
 - name: low_pass_filter_0
@@ -340,7 +341,33 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [258, 351]
+    coordinate: [297, 382]
+    rotation: 0
+    state: true
+- name: note_0
+  id: note
+  parameters:
+    alias: ''
+    comment: ''
+    note: "Procesamietno para modulaci\xF3n AM"
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [413, 201]
+    rotation: 0
+    state: true
+- name: note_1
+  id: note
+  parameters:
+    alias: ''
+    comment: ''
+    note: "Transmici\xF3n RDS"
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [91, 596]
     rotation: 0
     state: true
 - name: osmosdr_sink_0
@@ -453,7 +480,8 @@ blocks:
     clock_source5: ''
     clock_source6: ''
     clock_source7: ''
-    comment: ''
+    comment: "Bloque para reliazar la transmisi\xF3n con\nel HackRf la frecuancia\
+      \ de transmisi\xF3n es de\n150[Mhz]"
     corr0: '0'
     corr1: '0'
     corr10: '0'
@@ -601,7 +629,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [776, 700]
+    coordinate: [790, 606]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0
@@ -681,7 +709,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [863, 470]
+    coordinate: [873, 416]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0
@@ -778,7 +806,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [873, 331]
+    coordinate: [970, 296]
     rotation: 0
     state: true
 - name: rational_resampler_xxx_0
@@ -786,7 +814,8 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: "Aumentar el n\xFAmero de muetras \nde la se\xF1al de audio o tono para\
+      \ \nque la calida de video en el receptor\nsea aceptable"
     decim: '1'
     fbw: '0'
     interp: '50'
@@ -798,7 +827,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [489, 667]
+    coordinate: [523, 658]
     rotation: 0
     state: true
 - name: virtual_sink_0
@@ -811,7 +840,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [874, 253]
+    coordinate: [867, 257]
     rotation: 0
     state: true
 - name: virtual_source_0
@@ -824,7 +853,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [73, 646]
+    coordinate: [83, 666]
     rotation: 0
     state: true
 

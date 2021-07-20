@@ -36,19 +36,19 @@ blocks:
 - name: amplitud
   id: variable
   parameters:
-    comment: ''
+    comment: "Determina la amplitud\nde la se\xF1al \ntrangular"
     value: '10'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [402, 11]
+    coordinate: [404, 17]
     rotation: 0
     state: true
 - name: rango
   id: variable_qtgui_range
   parameters:
-    comment: ''
+    comment: "Permite controlar la frecuancia\nde la se\xF1ales utilizando\nun slider"
     gui_hint: ''
     label: frecuencia
     min_len: '200'
@@ -63,7 +63,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [288, 12]
+    coordinate: [291, 18]
     rotation: 0
     state: true
 - name: samp_rate
@@ -81,7 +81,8 @@ blocks:
 - name: selector
   id: variable_qtgui_chooser
   parameters:
-    comment: ''
+    comment: "Permite crear un selector para determinar que tipo de operaci\xF3n \n\
+      se quierea realizar"
     gui_hint: ''
     label: operaciones
     label0: suma
@@ -105,7 +106,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [499, 6]
+    coordinate: [535, 16]
     rotation: 0
     state: true
 - name: analog_const_source_x_0
@@ -122,7 +123,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [244, 481]
+    coordinate: [338, 559]
     rotation: 0
     state: true
 - name: analog_sig_source_x_0
@@ -144,7 +145,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [55, 334]
+    coordinate: [89, 384]
     rotation: 0
     state: true
 - name: analog_sig_source_x_0_0
@@ -166,7 +167,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [58, 189]
+    coordinate: [85, 244]
     rotation: 0
     state: true
 - name: blocks_add_xx_0
@@ -184,7 +185,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [533, 203]
+    coordinate: [605, 293]
     rotation: 0
     state: true
 - name: blocks_divide_xx_0
@@ -202,7 +203,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [522, 411]
+    coordinate: [599, 479]
     rotation: 0
     state: true
 - name: blocks_multiply_xx_0
@@ -220,7 +221,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [503, 304]
+    coordinate: [621, 390]
     rotation: 0
     state: true
 - name: blocks_selector_0
@@ -243,7 +244,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [658, 264]
+    coordinate: [790, 375]
     rotation: 0
     state: true
 - name: blocks_throttle_0
@@ -262,7 +263,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [283, 207]
+    coordinate: [305, 284]
     rotation: 0
     state: true
 - name: blocks_throttle_0_0
@@ -281,7 +282,34 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [297, 329]
+    coordinate: [302, 424]
+    rotation: 0
+    state: true
+- name: note_0
+  id: note
+  parameters:
+    alias: ''
+    comment: ''
+    note: Este bloque solo se puede utilizar en conjuto con el GUI chooser
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [782, 531]
+    rotation: 0
+    state: true
+- name: note_2
+  id: note
+  parameters:
+    alias: ''
+    comment: ''
+    note: "Permite ver en el domino de la frecuencia el comportamiento de la se\xF1\
+      al"
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1041, 524]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0
@@ -361,7 +389,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [892, 360]
+    coordinate: [1042, 422]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0
@@ -458,7 +486,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [906, 161]
+    coordinate: [1030, 312]
     rotation: 0
     state: true
 
@@ -472,9 +500,9 @@ connections:
 - [blocks_selector_0, '0', qtgui_freq_sink_x_0, '0']
 - [blocks_selector_0, '0', qtgui_time_sink_x_0, '0']
 - [blocks_throttle_0, '0', blocks_add_xx_0, '0']
+- [blocks_throttle_0, '0', blocks_divide_xx_0, '0']
 - [blocks_throttle_0, '0', blocks_multiply_xx_0, '0']
 - [blocks_throttle_0_0, '0', blocks_add_xx_0, '1']
-- [blocks_throttle_0_0, '0', blocks_divide_xx_0, '0']
 - [blocks_throttle_0_0, '0', blocks_multiply_xx_0, '1']
 
 metadata:

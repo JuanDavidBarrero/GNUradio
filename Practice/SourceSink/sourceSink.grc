@@ -126,7 +126,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [374, 129]
+    coordinate: [352, 166]
     rotation: 0
     state: true
 - name: blocks_throttle_0_0
@@ -145,7 +145,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [380, 236]
+    coordinate: [352, 300]
     rotation: 0
     state: true
 - name: blocks_throttle_0_0_0
@@ -164,7 +164,46 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [402, 348]
+    coordinate: [351, 435]
+    rotation: 0
+    state: true
+- name: note_0
+  id: note
+  parameters:
+    alias: ''
+    comment: ''
+    note: "Crea se\xF1ales con la frecuancia dada por el usuario"
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [140, 534]
+    rotation: 0
+    state: true
+- name: note_1
+  id: note
+  parameters:
+    alias: ''
+    comment: ''
+    note: Evita que el procesador del computador trabaje a toda maquina
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [351, 481]
+    rotation: 0
+    state: true
+- name: note_2
+  id: note
+  parameters:
+    alias: ''
+    comment: ''
+    note: "Muestra la se\xF1al de salida en el dominio del tiempo"
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [838, 548]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0
@@ -244,7 +283,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [659, 173]
+    coordinate: [839, 168]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0_0
@@ -324,7 +363,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [662, 285]
+    coordinate: [846, 305]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0_0_0
@@ -404,7 +443,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [667, 398]
+    coordinate: [834, 438]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0
@@ -501,7 +540,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [611, 23]
+    coordinate: [842, 32]
     rotation: 0
     state: true
 

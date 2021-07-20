@@ -116,7 +116,8 @@ blocks:
     affinity: ''
     alias: ''
     beta: '6.76'
-    comment: ''
+    comment: "El filtro pasa banda permite selecionar el rango \nde frecuncia que\
+      \ se desea filtrar"
     decim: '1'
     gain: '1'
     high_cutoff_freq: 4e3
@@ -132,7 +133,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [746, 343]
+    coordinate: [758, 376]
     rotation: 0
     state: true
 - name: band_reject_filter_0
@@ -141,7 +142,7 @@ blocks:
     affinity: ''
     alias: ''
     beta: '6.76'
-    comment: ''
+    comment: Solo evita que pase un determinado ranfo de la frecuencia
     decim: '1'
     gain: '1'
     high_cutoff_freq: 4e3
@@ -157,7 +158,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [739, 506]
+    coordinate: [754, 579]
     rotation: 0
     state: true
 - name: blocks_add_xx_0
@@ -194,7 +195,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [495, 296]
+    coordinate: [495, 325]
     rotation: 0
     state: true
 - name: high_pass_filter_0
@@ -203,7 +204,7 @@ blocks:
     affinity: ''
     alias: ''
     beta: '6.76'
-    comment: ''
+    comment: "Este permite recuperar la se\xF1al de m\xE1s alta frecuancia"
     cutoff_freq: 7e3
     decim: '1'
     gain: '1'
@@ -218,7 +219,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [750, 198]
+    coordinate: [758, 198]
     rotation: 0
     state: true
 - name: low_pass_filter_0
@@ -227,7 +228,7 @@ blocks:
     affinity: ''
     alias: ''
     beta: '6.76'
-    comment: ''
+    comment: "Con este filtro se puede recuperar la se\xF1al de baja frecuencia"
     cutoff_freq: '600'
     decim: '1'
     gain: '1'
@@ -242,7 +243,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [745, 46]
+    coordinate: [750, 15]
     rotation: 0
     state: true
 - name: note_0
@@ -255,7 +256,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [377, 216]
+    coordinate: [379, 418]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0
@@ -352,7 +353,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [965, 39]
+    coordinate: [973, 35]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0_0
@@ -449,7 +450,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [959, 353]
+    coordinate: [975, 403]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0_0_0
@@ -546,7 +547,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [944, 207]
+    coordinate: [966, 218]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0_0_1
@@ -643,7 +644,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [945, 523]
+    coordinate: [986, 608]
     rotation: 0
     state: true
 

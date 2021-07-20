@@ -35,7 +35,8 @@ blocks:
 - name: choose
   id: variable_qtgui_chooser
   parameters:
-    comment: ''
+    comment: "Permite escoger que tipo de filtro se pienza \nutilizar para tratar\
+      \ a la se\xF1al de entrada"
     gui_hint: ''
     label: musica o texto
     label0: Pasa alto
@@ -59,13 +60,14 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [36, 261]
+    coordinate: [263, 13]
     rotation: 0
     state: true
 - name: freq
   id: variable_qtgui_range
   parameters:
-    comment: ''
+    comment: "Con el fin de variar la frecuancia de los filtro\nde est secci\xF3n\
+      \ se puede mover el siguiente slider"
     gui_hint: ''
     label: freq
     min_len: '200'
@@ -80,7 +82,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [271, 12]
+    coordinate: [393, 11]
     rotation: 0
     state: true
 - name: samp_rate
@@ -100,7 +102,11 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: 'Normalmente los parlantes de los computadores
+
+      funcionan con 44100Hz aunque tambien
+
+      pueden trabajar con 48000Hz,'
     device_name: ''
     num_inputs: '1'
     ok_to_block: 'True'
@@ -109,7 +115,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [973, 146]
+    coordinate: [988, 301]
     rotation: 0
     state: true
 - name: band_pass_filter_0
@@ -134,7 +140,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [500, 372]
+    coordinate: [508, 527]
     rotation: 0
     state: true
 - name: blocks_selector_0
@@ -157,7 +163,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [253, 207]
+    coordinate: [296, 393]
     rotation: 0
     state: true
 - name: blocks_selector_0_0
@@ -180,7 +186,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [721, 177]
+    coordinate: [735, 396]
     rotation: 0
     state: true
 - name: blocks_wavfile_sink_0
@@ -189,7 +195,8 @@ blocks:
     affinity: ''
     alias: ''
     bits_per_sample: '16'
-    comment: ''
+    comment: "Se debe asignar una lugar en su PC, donde se quiera guardar \nel archivo\
+      \ creado"
     file: C:\Users\USUARIO\Desktop\JuanDavid\GNURadio\AudioFile\nuevo_audio.wav
     nchan: '1'
     samp_rate: samp_rate
@@ -197,7 +204,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [972, 217]
+    coordinate: [979, 424]
     rotation: 0
     state: enabled
 - name: blocks_wavfile_source_0
@@ -205,7 +212,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: Selecionar un audio que este en su equipo
     file: C:\Users\USUARIO\Desktop\JuanDavid\GNURadio\AudioFile\audioTest_44100.wav
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -215,7 +222,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [33, 157]
+    coordinate: [51, 400]
     rotation: 0
     state: true
 - name: high_pass_filter_0
@@ -239,7 +246,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [510, 67]
+    coordinate: [509, 237]
     rotation: 0
     state: enabled
 - name: low_pass_filter_0
@@ -263,7 +270,34 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [486, 224]
+    coordinate: [510, 381]
+    rotation: 0
+    state: true
+- name: note_0
+  id: note
+  parameters:
+    alias: ''
+    comment: ''
+    note: Si se quiere se puede cambiar el tiempo de muestreo para ver el nuevo comportamiento
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [985, 245]
+    rotation: 0
+    state: true
+- name: note_1
+  id: note
+  parameters:
+    alias: ''
+    comment: ''
+    note: El audio debe estar en su equipo, para capturar o hacer uno se recomiendo
+      el software AudaCity
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [51, 348]
     rotation: 0
     state: true
 

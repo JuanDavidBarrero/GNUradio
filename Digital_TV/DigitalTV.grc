@@ -1,6 +1,6 @@
 options:
   parameters:
-    author: USUARIO
+    author: Juan David Barrero
     category: '[GRC Hier Blocks]'
     cmake_opt: ''
     comment: ''
@@ -21,7 +21,7 @@ options:
     run_options: prompt
     sizing_mode: fixed
     thread_safe_setters: ''
-    title: Not titled yet
+    title: "Televisi\xF3n digital"
     window_size: ''
   states:
     bus_sink: false
@@ -41,7 +41,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [674, 191]
+    coordinate: [668, 197]
     rotation: 0
     state: enabled
 - name: pilot_freq
@@ -53,7 +53,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [623, 124]
+    coordinate: [466, 132]
     rotation: 0
     state: enabled
 - name: sample_rate
@@ -65,7 +65,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [727, 121]
+    coordinate: [573, 132]
     rotation: 0
     state: enabled
 - name: symbol_rate
@@ -77,7 +77,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [573, 190]
+    coordinate: [573, 195]
     rotation: 0
     state: enabled
 - name: blocks_file_sink_0
@@ -87,7 +87,7 @@ blocks:
     alias: ''
     append: 'False'
     comment: ''
-    file: C:\Users\USUARIO\Downloads\VideoRx.ts
+    file: C:\Users\JuanD\OneDrive\Escritorio\VideoRx.ts
     type: byte
     unbuffered: 'False'
     vlen: '1'
@@ -105,7 +105,7 @@ blocks:
     alias: ''
     begin_tag: pmt.PMT_NIL
     comment: ''
-    file: C:\Users\USUARIO\Downloads\VideoTX.ts
+    file: C:\Users\JuanD\Downloads\videoTX.ts
     length: '0'
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -256,7 +256,7 @@ blocks:
     comment: ''
     maxoutbuf: '0'
     minoutbuf: '0'
-    rate: sample_rate
+    rate: symbol_rate
     sps: '1.5'
   states:
     bus_sink: false
@@ -411,7 +411,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [912, 496]
+    coordinate: [912, 503]
     rotation: 0
     state: enabled
 - name: virtual_sink_0

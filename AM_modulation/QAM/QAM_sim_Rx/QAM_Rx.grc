@@ -35,7 +35,7 @@ blocks:
 - name: choose
   id: variable_qtgui_chooser
   parameters:
-    comment: ''
+    comment: "Permite escoger entre las dose se\xF1ales de audio \nque se estren trasmitiendo"
     gui_hint: ''
     label: mensages
     label0: msg1
@@ -59,7 +59,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [15, 282]
+    coordinate: [74, 289]
     rotation: 0
     state: true
 - name: samp_rate
@@ -80,7 +80,7 @@ blocks:
     affinity: ''
     alias: ''
     amp: '1'
-    comment: ''
+    comment: "Se\xF1al portadora coseno"
     freq: 10e3
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -93,7 +93,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [510, 254]
+    coordinate: [473, 240]
     rotation: 0
     state: true
 - name: analog_sig_source_x_0_0_0
@@ -102,7 +102,7 @@ blocks:
     affinity: ''
     alias: ''
     amp: '1'
-    comment: ''
+    comment: "Se\xF1al portadora Seno"
     freq: 10e3
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -115,7 +115,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [497, 413]
+    coordinate: [474, 391]
     rotation: 0
     state: true
 - name: analog_sig_source_x_0_0_0_0
@@ -124,7 +124,7 @@ blocks:
     affinity: ''
     alias: ''
     amp: '1'
-    comment: ''
+    comment: "Se\xF1al portadora seno"
     freq: 10e3
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -146,7 +146,7 @@ blocks:
     affinity: ''
     alias: ''
     amp: '1'
-    comment: ''
+    comment: "Se\xF1al portadora coseno"
     freq: 10e3
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -176,7 +176,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1000, 913]
+    coordinate: [941, 858]
     rotation: 0
     state: true
 - name: blocks_add_xx_0
@@ -194,7 +194,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [904, 223]
+    coordinate: [849, 156]
     rotation: 0
     state: true
 - name: blocks_add_xx_0_0
@@ -212,7 +212,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [890, 455]
+    coordinate: [853, 537]
     rotation: 0
     state: true
 - name: blocks_add_xx_0_0_0
@@ -230,7 +230,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1021, 343]
+    coordinate: [1003, 368]
     rotation: 0
     state: true
 - name: blocks_multiply_const_xx_0
@@ -248,7 +248,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [310, 136]
+    coordinate: [317, 136]
     rotation: 0
     state: true
 - name: blocks_multiply_const_xx_0_0
@@ -266,7 +266,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [318, 585]
+    coordinate: [313, 581]
     rotation: 0
     state: true
 - name: blocks_multiply_xx_0
@@ -284,7 +284,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [765, 207]
+    coordinate: [704, 140]
     rotation: 0
     state: true
 - name: blocks_multiply_xx_0_0
@@ -302,7 +302,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [752, 507]
+    coordinate: [706, 553]
     rotation: 0
     state: true
 - name: blocks_multiply_xx_0_0_0
@@ -320,7 +320,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [333, 835]
+    coordinate: [357, 777]
     rotation: 0
     state: true
 - name: blocks_multiply_xx_0_0_0_0
@@ -338,7 +338,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [335, 927]
+    coordinate: [340, 980]
     rotation: 0
     state: true
 - name: blocks_selector_0
@@ -346,7 +346,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: "Permite selecionar el uno de los audio \nque fue transmitido"
     enabled: 'True'
     input_index: choose
     maxoutbuf: '0'
@@ -361,7 +361,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [754, 878]
+    coordinate: [720, 886]
     rotation: 0
     state: true
 - name: blocks_wavfile_source_0
@@ -369,7 +369,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: "Seleciona una se\xF1al de audio \nque este en su computador"
     file: C:\Users\JuanD\Downloads\test.wav
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -379,7 +379,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [77, 131]
+    coordinate: [93, 129]
     rotation: 0
     state: true
 - name: blocks_wavfile_source_0_0
@@ -387,7 +387,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: "Seleciona una se\xF1al de audio \nque este en su computador"
     file: C:\Users\JuanD\Downloads\test2.wav
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -397,7 +397,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [71, 578]
+    coordinate: [85, 573]
     rotation: 0
     state: true
 - name: low_pass_filter_0
@@ -421,7 +421,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [533, 98]
+    coordinate: [501, 92]
     rotation: 0
     state: true
 - name: low_pass_filter_0_0
@@ -445,7 +445,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [517, 545]
+    coordinate: [503, 537]
     rotation: 0
     state: true
 - name: low_pass_filter_0_0_0
@@ -469,7 +469,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [509, 762]
+    coordinate: [494, 745]
     rotation: 0
     state: true
 - name: low_pass_filter_0_0_0_0
@@ -493,7 +493,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [514, 930]
+    coordinate: [479, 949]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0
@@ -573,7 +573,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1172, 438]
+    coordinate: [1189, 384]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0_0
@@ -653,7 +653,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [990, 788]
+    coordinate: [981, 922]
     rotation: 0
     state: true
 - name: virtual_sink_0
@@ -666,7 +666,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1132, 299]
+    coordinate: [1135, 303]
     rotation: 0
     state: true
 - name: virtual_source_0
@@ -679,7 +679,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [87, 898]
+    coordinate: [108, 888]
     rotation: 0
     state: true
 
