@@ -113,7 +113,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [544, 189]
+    coordinate: [537, 201]
     rotation: 0
     state: true
 - name: audio_sink_0
@@ -130,7 +130,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [994, 170]
+    coordinate: [977, 124]
     rotation: 0
     state: enabled
 - name: low_pass_filter_1
@@ -154,7 +154,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [768, 177]
+    coordinate: [767, 182]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_1
@@ -234,7 +234,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [985, 383]
+    coordinate: [982, 314]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_1
@@ -331,7 +331,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [988, 258]
+    coordinate: [993, 202]
     rotation: 0
     state: true
 - name: rational_resampler_xxx_0
@@ -351,7 +351,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [336, 192]
+    coordinate: [332, 201]
     rotation: 0
     state: true
 - name: rtlsdr_source_0

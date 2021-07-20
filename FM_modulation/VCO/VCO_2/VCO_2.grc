@@ -71,7 +71,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [486, 6]
+    coordinate: [484, 8]
     rotation: 0
     state: true
 - name: offset
@@ -113,7 +113,7 @@ blocks:
     affinity: ''
     alias: ''
     amp: '1'
-    comment: ''
+    comment: "Se\xF1al moduladora"
     freq: moduladora
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -126,7 +126,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [33, 195]
+    coordinate: [123, 206]
     rotation: 0
     state: enabled
 - name: blocks_add_const_vxx_0
@@ -134,7 +134,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: VCO offset
     const: offset
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -144,7 +144,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [425, 150]
+    coordinate: [543, 246]
     rotation: 0
     state: true
 - name: blocks_multiply_const_vxx_0
@@ -152,7 +152,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: "Amplitud de la se\xF1al moduladora"
     const: amp
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -162,7 +162,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [287, 193]
+    coordinate: [360, 246]
     rotation: 0
     state: true
 - name: blocks_vco_f_0
@@ -171,7 +171,7 @@ blocks:
     affinity: ''
     alias: ''
     amplitude: '1'
-    comment: ''
+    comment: Simple VCO
     maxoutbuf: '0'
     minoutbuf: '0'
     samp_rate: samp_rate
@@ -180,7 +180,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [583, 156]
+    coordinate: [695, 230]
     rotation: 0
     state: true
 - name: import_0
@@ -273,7 +273,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [781, 313]
+    coordinate: [931, 249]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0
@@ -303,7 +303,8 @@ blocks:
     color7: yellow
     color8: dark red
     color9: dark green
-    comment: ''
+    comment: "Permite ver como la frecuencia \nde la se\xF1al portadora cambiar de\n\
+      acuerdo a la amplitud de la se\xF1al\nmoduladora"
     ctrlpanel: 'False'
     entags: 'True'
     grid: 'True'
@@ -370,7 +371,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [921, 162]
+    coordinate: [910, 397]
     rotation: 0
     state: true
 - name: virtual_sink_0
@@ -383,7 +384,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [319, 301]
+    coordinate: [380, 338]
     rotation: 0
     state: true
 - name: virtual_source_0
@@ -396,7 +397,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [771, 244]
+    coordinate: [723, 429]
     rotation: 0
     state: true
 

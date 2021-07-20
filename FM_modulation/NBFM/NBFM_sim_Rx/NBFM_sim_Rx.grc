@@ -59,7 +59,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [275, 12]
+    coordinate: [287, 17]
     rotation: 0
     state: true
 - name: samp_rate
@@ -80,7 +80,7 @@ blocks:
     affinity: ''
     alias: ''
     audio_rate: samp_rate
-    comment: ''
+    comment: De modulador de FM banda angosta
     max_dev: 5e3
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -90,7 +90,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [258, 513]
+    coordinate: [291, 516]
     rotation: 0
     state: true
 - name: analog_nbfm_tx_0
@@ -99,7 +99,7 @@ blocks:
     affinity: ''
     alias: ''
     audio_rate: samp_rate
-    comment: ''
+    comment: "Transmisor de FM banda angosta\ncon caracter\xEDstica comercial"
     fh: '-1.0'
     max_dev: 2e3
     maxoutbuf: '0'
@@ -110,7 +110,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [626, 217]
+    coordinate: [715, 220]
     rotation: 0
     state: true
 - name: analog_sig_source_x_0
@@ -132,7 +132,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [37, 157]
+    coordinate: [106, 175]
     rotation: 0
     state: enabled
 - name: audio_sink_0
@@ -140,7 +140,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: Para bloquer el bloque presione D
     device_name: ''
     num_inputs: '1'
     ok_to_block: 'True'
@@ -149,7 +149,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [704, 505]
+    coordinate: [735, 443]
     rotation: 0
     state: disabled
 - name: blocks_selector_0
@@ -172,7 +172,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [439, 237]
+    coordinate: [510, 219]
     rotation: 0
     state: true
 - name: blocks_wavfile_source_0_0
@@ -180,7 +180,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: Selecione un audio de su PC
     file: C:\Users\JuanD\Downloads\test.wav
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -190,7 +190,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [26, 344]
+    coordinate: [92, 359]
     rotation: 0
     state: enabled
 - name: low_pass_filter_0
@@ -214,7 +214,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [252, 306]
+    coordinate: [321, 324]
     rotation: 0
     state: enabled
 - name: low_pass_filter_1
@@ -238,7 +238,20 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [464, 496]
+    coordinate: [527, 497]
+    rotation: 0
+    state: true
+- name: note_0
+  id: note
+  parameters:
+    alias: ''
+    comment: ''
+    note: Para activar el bloque presione E
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [708, 392]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0
@@ -318,7 +331,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [920, 257]
+    coordinate: [1029, 257]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_1
@@ -398,7 +411,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [705, 675]
+    coordinate: [786, 626]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0
@@ -495,7 +508,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [920, 384]
+    coordinate: [1027, 381]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_1
@@ -592,7 +605,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [694, 565]
+    coordinate: [801, 516]
     rotation: 0
     state: true
 - name: virtual_sink_0
@@ -605,7 +618,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [906, 144]
+    coordinate: [982, 170]
     rotation: 0
     state: true
 - name: virtual_source_0
@@ -618,7 +631,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [48, 522]
+    coordinate: [117, 540]
     rotation: 0
     state: true
 

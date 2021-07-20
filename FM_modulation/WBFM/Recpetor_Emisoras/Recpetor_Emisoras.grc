@@ -95,7 +95,8 @@ blocks:
     affinity: ''
     alias: ''
     audio_decimation: '1'
-    comment: ''
+    comment: "La emisoras Fm transmiten con banda \nancha gracias a este bloque se\
+      \ puede\ncaptar y oirlas"
     maxoutbuf: '0'
     minoutbuf: '0'
     quad_rate: samp_rate_RDS
@@ -103,7 +104,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [380, 236]
+    coordinate: [361, 243]
     rotation: 0
     state: true
 - name: audio_sink_0
@@ -120,7 +121,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1064, 199]
+    coordinate: [1077, 249]
     rotation: 0
     state: true
 - name: low_pass_filter_0
@@ -129,7 +130,8 @@ blocks:
     affinity: ''
     alias: ''
     beta: '6.76'
-    comment: ''
+    comment: "Para evitar que el ruido da\xF1a la recpeci\xF3n \nde la informaci\xF3\
+      n se pone el siguiente filtro"
     cutoff_freq: 20e3
     decim: '1'
     gain: '1'
@@ -144,7 +146,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [836, 196]
+    coordinate: [817, 206]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0
@@ -224,7 +226,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1064, 275]
+    coordinate: [1085, 307]
     rotation: 0
     state: true
 - name: rational_resampler_xxx_0
@@ -244,7 +246,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [621, 212]
+    coordinate: [598, 226]
     rotation: 0
     state: true
 - name: rtlsdr_source_0

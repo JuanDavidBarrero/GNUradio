@@ -32,23 +32,6 @@ options:
     state: enabled
 
 blocks:
-- name: LPF
-  id: variable_low_pass_filter_taps
-  parameters:
-    beta: '6.76'
-    comment: ''
-    cutoff_freq: 15e3
-    gain: '1.0'
-    samp_rate: samp_rate
-    width: 2e3
-    win: firdes.WIN_HAMMING
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [52, 412]
-    rotation: 0
-    state: true
 - name: chooser
   id: variable_qtgui_chooser
   parameters:
@@ -155,7 +138,8 @@ blocks:
     affinity: ''
     alias: ''
     audio_rate: samp_rate
-    comment: ''
+    comment: "Si se deja por defecto este transmite \nla se\xF1al modulada FM con\
+      \ las carater\xEDsticas\nde una emisora comercial"
     fh: '-1.0'
     max_dev: 75e3
     maxoutbuf: '0'
@@ -166,7 +150,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [656, 114]
+    coordinate: [665, 188]
     rotation: 0
     state: true
 - name: blocks_selector_0
@@ -197,7 +181,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: "Selecione un audio que este \nen su PC"
     file: C:\Users\JuanD\Downloads\test.wav
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -207,7 +191,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [53, 310]
+    coordinate: [59, 300]
     rotation: 0
     state: true
 - name: low_pass_filter_0
@@ -344,7 +328,8 @@ blocks:
     clock_source5: ''
     clock_source6: ''
     clock_source7: ''
-    comment: ''
+    comment: "Bloque transmisor de la se\xF1al a este \nse le puede subir la ganancia\
+      \ para poder\nenviar la se\xF1al un poco mas lejos"
     corr0: '0'
     corr1: '0'
     corr10: '0'
@@ -492,7 +477,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1096, 83]
+    coordinate: [1225, 152]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0
@@ -589,7 +574,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [906, 292]
+    coordinate: [965, 331]
     rotation: 0
     state: true
 - name: rational_resampler_xxx_0
@@ -609,7 +594,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [892, 45]
+    coordinate: [968, 196]
     rotation: 0
     state: true
 

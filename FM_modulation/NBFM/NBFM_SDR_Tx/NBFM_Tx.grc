@@ -145,7 +145,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [651, 275]
+    coordinate: [656, 257]
     rotation: 0
     state: true
 - name: analog_sig_source_x_0
@@ -190,7 +190,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [441, 305]
+    coordinate: [441, 257]
     rotation: 0
     state: true
 - name: blocks_wavfile_source_0_0
@@ -232,7 +232,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [237, 380]
+    coordinate: [265, 376]
     rotation: 0
     state: enabled
 - name: osmosdr_sink_0
@@ -493,7 +493,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1205, 279]
+    coordinate: [1203, 222]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0
@@ -573,7 +573,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [906, 460]
+    coordinate: [919, 430]
     rotation: 0
     state: true
 - name: rational_resampler_xxx_0
@@ -593,7 +593,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [940, 256]
+    coordinate: [948, 266]
     rotation: 0
     state: true
 

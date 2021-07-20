@@ -79,7 +79,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [61, 200]
+    coordinate: [94, 208]
     rotation: 0
     state: true
 - name: blocks_vco_f_0
@@ -88,7 +88,7 @@ blocks:
     affinity: ''
     alias: ''
     amplitude: '1'
-    comment: ''
+    comment: Simple VCO
     maxoutbuf: '0'
     minoutbuf: '0'
     samp_rate: samp_rate
@@ -190,7 +190,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [559, 328]
+    coordinate: [529, 278]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0
@@ -287,7 +287,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [552, 220]
+    coordinate: [533, 193]
     rotation: 0
     state: true
 

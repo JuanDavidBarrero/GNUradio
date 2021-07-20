@@ -102,7 +102,8 @@ blocks:
     affinity: ''
     alias: ''
     audio_decimation: '1'
-    comment: ''
+    comment: "Decuerdo a los parametros del transmisor\neste demodula la se\xF1al\
+      \ y permite \nescucharla en los parlantes del equipo"
     maxoutbuf: '0'
     minoutbuf: '0'
     quad_rate: samp_rate
@@ -110,7 +111,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [425, 465]
+    coordinate: [291, 471]
     rotation: 0
     state: true
 - name: analog_wfm_tx_0
@@ -119,7 +120,8 @@ blocks:
     affinity: ''
     alias: ''
     audio_rate: samp_rate
-    comment: ''
+    comment: "Modulador de FM banda ancha \neste ya viene configurado \npara realizar\
+      \ la transmici\xF3n con \nlos par\xE1metros de una se\xF1al comercial"
     fh: '-1.0'
     max_dev: 75e3
     maxoutbuf: '0'
@@ -130,7 +132,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [716, 183]
+    coordinate: [719, 185]
     rotation: 0
     state: true
 - name: audio_sink_0
@@ -147,7 +149,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [720, 486]
+    coordinate: [507, 406]
     rotation: 0
     state: true
 - name: blocks_selector_0
@@ -179,7 +181,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: ''
-    file: C:\Users\USUARIO\Desktop\JuanDavid\gnu_radio\audio_44100.wav
+    file: C:\Users\JuanD\Downloads\test.wav
     maxoutbuf: '0'
     minoutbuf: '0'
     nchan: '1'
@@ -212,7 +214,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [298, 258]
+    coordinate: [308, 269]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0
@@ -309,7 +311,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [981, 154]
+    coordinate: [1011, 200]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_1
@@ -406,7 +408,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [718, 370]
+    coordinate: [598, 452]
     rotation: 0
     state: true
 - name: virtual_sink_0
@@ -419,7 +421,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [990, 290]
+    coordinate: [1008, 295]
     rotation: 0
     state: true
 - name: virtual_source_0
@@ -432,7 +434,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [185, 467]
+    coordinate: [108, 479]
     rotation: 0
     state: true
 

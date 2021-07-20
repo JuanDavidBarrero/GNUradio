@@ -122,7 +122,7 @@ blocks:
     affinity: ''
     alias: ''
     audio_rate: samp_rate
-    comment: ''
+    comment: Receptor de FM banda angosta
     fh: '-1.0'
     max_dev: max_D
     maxoutbuf: '0'
@@ -133,7 +133,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [640, 230]
+    coordinate: [661, 201]
     rotation: 0
     state: true
 - name: analog_sig_source_x_0
@@ -178,7 +178,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [453, 250]
+    coordinate: [446, 201]
     rotation: 0
     state: true
 - name: blocks_wavfile_source_0_0
@@ -186,7 +186,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: Selecione un audio que este su PC
     file: C:\Users\JuanD\Downloads\test.wav
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -196,7 +196,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [40, 357]
+    coordinate: [33, 355]
     rotation: 0
     state: enabled
 - name: low_pass_filter_0
@@ -300,7 +300,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [932, 269]
+    coordinate: [984, 237]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0
@@ -397,7 +397,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [934, 397]
+    coordinate: [958, 378]
     rotation: 0
     state: true
 
