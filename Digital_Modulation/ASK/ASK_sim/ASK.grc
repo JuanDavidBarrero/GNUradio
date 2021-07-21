@@ -155,7 +155,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [771, 372]
+    coordinate: [666, 324]
     rotation: 0
     state: true
 - name: blocks_add_const_vxx_0
@@ -173,7 +173,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1160, 144]
+    coordinate: [1019, 213]
     rotation: 0
     state: true
 - name: blocks_char_to_float_0
@@ -190,7 +190,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [264, 385]
+    coordinate: [245, 369]
     rotation: 0
     state: true
 - name: blocks_char_to_float_0_0
@@ -207,7 +207,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [486, 270]
+    coordinate: [448, 234]
     rotation: 0
     state: true
 - name: blocks_multiply_xx_0
@@ -225,7 +225,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1034, 246]
+    coordinate: [885, 236]
     rotation: 0
     state: true
 - name: blocks_repack_bits_bb_0
@@ -245,7 +245,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [264, 223]
+    coordinate: [238, 225]
     rotation: 0
     state: true
 - name: import_0
@@ -277,7 +277,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [675, 232]
+    coordinate: [618, 226]
     rotation: 0
     state: true
 - name: osmosdr_sink_0
@@ -538,7 +538,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1425, 372]
+    coordinate: [1320, 279]
     rotation: 0
     state: enabled
 - name: qtgui_time_sink_x_0
@@ -635,7 +635,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [453, 396]
+    coordinate: [423, 353]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_1
@@ -732,7 +732,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1298, 223]
+    coordinate: [1182, 213]
     rotation: 0
     state: true
 - name: rational_resampler_xxx_0
@@ -752,7 +752,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1168, 397]
+    coordinate: [989, 332]
     rotation: 0
     state: enabled
 - name: virtual_sink_0_0
@@ -765,7 +765,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [889, 152]
+    coordinate: [812, 134]
     rotation: 0
     state: true
 - name: virtual_source_0_0
@@ -778,7 +778,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1007, 80]
+    coordinate: [909, 133]
     rotation: 0
     state: true
 

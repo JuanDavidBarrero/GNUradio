@@ -63,7 +63,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [65, 173]
+    coordinate: [46, 275]
     rotation: 0
     state: true
 - name: blocks_stream_to_tagged_stream_0
@@ -82,7 +82,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [317, 206]
+    coordinate: [311, 301]
     rotation: 0
     state: enabled
 - name: blocks_tagged_stream_mux_0
@@ -102,7 +102,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [693, 192]
+    coordinate: [696, 282]
     rotation: 0
     state: enabled
 - name: digital_gfsk_mod_1
@@ -122,7 +122,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [941, 173]
+    coordinate: [947, 278]
     rotation: 0
     state: true
 - name: digital_protocol_formatter_bb_0
@@ -139,7 +139,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [511, 89]
+    coordinate: [493, 216]
     rotation: 0
     state: enabled
 - name: hdr_format
@@ -418,7 +418,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1171, 77]
+    coordinate: [1253, 226]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0
@@ -498,7 +498,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1189, 278]
+    coordinate: [1149, 114]
     rotation: 0
     state: enabled
 - name: qtgui_time_sink_x_0
@@ -595,7 +595,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1121, 414]
+    coordinate: [1153, 476]
     rotation: 0
     state: true
 

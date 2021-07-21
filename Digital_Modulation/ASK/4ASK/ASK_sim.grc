@@ -173,7 +173,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [988, 161]
+    coordinate: [1095, 146]
     rotation: 0
     state: true
 - name: blocks_char_to_float_0
@@ -207,7 +207,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [431, 222]
+    coordinate: [421, 259]
     rotation: 0
     state: true
 - name: blocks_multiply_xx_0
@@ -225,7 +225,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [911, 257]
+    coordinate: [912, 264]
     rotation: 0
     state: true
 - name: blocks_repack_bits_bb_0
@@ -245,7 +245,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [226, 237]
+    coordinate: [211, 251]
     rotation: 0
     state: true
 - name: import_0
@@ -277,7 +277,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [594, 202]
+    coordinate: [610, 251]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0
@@ -374,7 +374,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [409, 378]
+    coordinate: [410, 361]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_1
@@ -471,7 +471,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1126, 240]
+    coordinate: [1243, 244]
     rotation: 0
     state: true
 - name: virtual_sink_0_0
@@ -484,7 +484,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [742, 118]
+    coordinate: [792, 150]
     rotation: 0
     state: true
 - name: virtual_source_0_0
@@ -497,7 +497,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [835, 97]
+    coordinate: [937, 146]
     rotation: 0
     state: true
 

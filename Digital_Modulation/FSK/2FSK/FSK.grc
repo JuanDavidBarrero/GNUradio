@@ -94,7 +94,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [328, 394]
+    coordinate: [385, 349]
     rotation: 0
     state: true
 - name: analog_quadrature_demod_cf_0
@@ -110,7 +110,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1311, 208]
+    coordinate: [1314, 158]
     rotation: 0
     state: enabled
 - name: analog_random_source_x_0
@@ -130,7 +130,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [44, 166]
+    coordinate: [52, 217]
     rotation: 0
     state: true
 - name: analog_sig_source_x_0
@@ -152,7 +152,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [495, 479]
+    coordinate: [543, 471]
     rotation: 0
     state: true
 - name: analog_sig_source_x_0_0
@@ -174,7 +174,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [500, 152]
+    coordinate: [541, 98]
     rotation: 0
     state: true
 - name: blocks_add_xx_0
@@ -192,7 +192,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [900, 346]
+    coordinate: [937, 352]
     rotation: 0
     state: true
 - name: blocks_char_to_float_0
@@ -209,7 +209,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [336, 323]
+    coordinate: [434, 241]
     rotation: 0
     state: true
 - name: blocks_char_to_float_1
@@ -226,7 +226,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1074, 621]
+    coordinate: [1082, 672]
     rotation: 180
     state: enabled
 - name: blocks_multiply_xx_0
@@ -244,7 +244,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [742, 449]
+    coordinate: [776, 367]
     rotation: 0
     state: true
 - name: blocks_multiply_xx_0_0
@@ -262,7 +262,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [761, 250]
+    coordinate: [797, 208]
     rotation: 0
     state: true
 - name: blocks_repeat_0
@@ -280,7 +280,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [192, 272]
+    coordinate: [241, 241]
     rotation: 0
     state: true
 - name: blocks_sub_xx_0
@@ -298,7 +298,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [554, 349]
+    coordinate: [625, 351]
     rotation: 0
     state: true
 - name: digital_binary_slicer_fb_0
@@ -313,7 +313,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1413, 438]
+    coordinate: [1453, 470]
     rotation: 270
     state: enabled
 - name: freq_xlating_fir_filter_xxx_0
@@ -333,7 +333,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1031, 186]
+    coordinate: [1061, 134]
     rotation: 0
     state: enabled
 - name: import_1
@@ -426,7 +426,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1096, 349]
+    coordinate: [1106, 367]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0
@@ -523,7 +523,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1080, 475]
+    coordinate: [1094, 509]
     rotation: 0
     state: true
 

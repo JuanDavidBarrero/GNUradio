@@ -59,7 +59,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1219, 296]
+    coordinate: [1252, 233]
     rotation: 0
     state: enabled
 - name: blocks_repack_bits_bb_0_0_0
@@ -79,7 +79,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1026, 201]
+    coordinate: [1031, 241]
     rotation: 0
     state: enabled
 - name: blocks_unpack_k_bits_bb_0_0_0
@@ -95,7 +95,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [634, 175]
+    coordinate: [576, 249]
     rotation: 0
     state: enabled
 - name: digital_correlate_access_code_xx_ts_1
@@ -114,7 +114,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [780, 258]
+    coordinate: [747, 233]
     rotation: 0
     state: enabled
 - name: digital_gfsk_demod_0
@@ -137,7 +137,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [362, 168]
+    coordinate: [339, 209]
     rotation: 0
     state: true
 - name: rtlsdr_source_0

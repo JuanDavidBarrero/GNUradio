@@ -59,7 +59,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1219, 437]
+    coordinate: [1175, 418]
     rotation: 0
     state: enabled
 - name: blocks_file_source_0
@@ -101,7 +101,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [968, 443]
+    coordinate: [948, 426]
     rotation: 0
     state: enabled
 - name: blocks_stream_to_tagged_stream_0
@@ -120,7 +120,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [285, 197]
+    coordinate: [271, 194]
     rotation: 0
     state: enabled
 - name: blocks_tagged_stream_mux_0
@@ -156,7 +156,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [520, 426]
+    coordinate: [472, 434]
     rotation: 0
     state: enabled
 - name: digital_correlate_access_code_xx_ts_1
@@ -175,7 +175,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [695, 355]
+    coordinate: [654, 418]
     rotation: 0
     state: enabled
 - name: digital_gfsk_demod_0
@@ -198,7 +198,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [272, 402]
+    coordinate: [235, 393]
     rotation: 0
     state: true
 - name: digital_gfsk_mod_1
@@ -218,7 +218,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [914, 171]
+    coordinate: [915, 168]
     rotation: 0
     state: true
 - name: digital_protocol_formatter_bb_0
@@ -235,7 +235,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [484, 87]
+    coordinate: [478, 95]
     rotation: 0
     state: enabled
 - name: hdr_format
