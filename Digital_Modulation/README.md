@@ -3,10 +3,10 @@
 
 ![N|Solid](https://paginawebcarleidysvargas.files.wordpress.com/2020/08/digital-modulation-schemes-ask-fsk-and-psk.png?w=750)
 
-This work shows several examples of how to perform frequency modulation using GNU radio and implementing them in an SDR 
+This work shows several examples of how to perform digital modulation using GNU radio and implementing them in an SDR 
 
 ### Topics 
-This section will show how to manipulate the Frequency  of the carrier signal to transmit information, at first it will show the simulation and then we will use the SDR to transmit the information.
+This section will show how to manipulate the digital information and how to transmit it with the SDR
 
 - **Digital modulation**
     - ASK
