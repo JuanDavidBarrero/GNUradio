@@ -151,7 +151,7 @@ blocks:
     bus_structure: null
     coordinate: [735, 443]
     rotation: 0
-    state: disabled
+    state: enabled
 - name: blocks_selector_0
   id: blocks_selector
   parameters:
@@ -181,7 +181,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: Selecione un audio de su PC
-    file: C:\Users\JuanD\Downloads\test.wav
+    file: C:\Users\USUARIO\Desktop\JuanDavid\GNURadio\Multimedia\Foreigner_44100.wav
     maxoutbuf: '0'
     minoutbuf: '0'
     nchan: '1'

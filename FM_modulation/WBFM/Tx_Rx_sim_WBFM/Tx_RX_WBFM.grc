@@ -51,10 +51,10 @@ blocks:
     option3: '3'
     option4: '4'
     options: '[0, 1, 2]'
-    orient: Qt.QVBoxLayout
+    orient: Qt.QHBoxLayout
     type: int
     value: '0'
-    widget: combo_box
+    widget: radio_buttons
   states:
     bus_sink: false
     bus_source: false
@@ -106,7 +106,7 @@ blocks:
       \ y permite \nescucharla en los parlantes del equipo"
     maxoutbuf: '0'
     minoutbuf: '0'
-    quad_rate: samp_rate
+    quad_rate: samp_rate*10
   states:
     bus_sink: false
     bus_source: false
@@ -119,20 +119,19 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    audio_rate: samp_rate
-    comment: "Modulador de FM banda ancha \neste ya viene configurado \npara realizar\
-      \ la transmici\xF3n con \nlos par\xE1metros de una se\xF1al comercial"
+    audio_rate: samp_rate*10
+    comment: ''
     fh: '-1.0'
     max_dev: 75e3
     maxoutbuf: '0'
     minoutbuf: '0'
-    quad_rate: samp_rate
+    quad_rate: samp_rate*10
     tau: 75e-6
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [719, 185]
+    coordinate: [890, 185]
     rotation: 0
     state: true
 - name: audio_sink_0
@@ -149,9 +148,9 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [507, 406]
+    coordinate: [765, 480]
     rotation: 0
-    state: true
+    state: enabled
 - name: blocks_selector_0
   id: blocks_selector
   parameters:
@@ -181,7 +180,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: ''
-    file: C:\Users\JuanD\Downloads\test.wav
+    file: C:\Users\USUARIO\Desktop\JuanDavid\GNURadio\Multimedia\Metallica_44100.wav
     maxoutbuf: '0'
     minoutbuf: '0'
     nchan: '1'
@@ -190,7 +189,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [70, 304]
+    coordinate: [97, 305]
     rotation: 0
     state: true
 - name: low_pass_filter_0
@@ -217,105 +216,33 @@ blocks:
     coordinate: [308, 269]
     rotation: 0
     state: true
-- name: qtgui_time_sink_x_0
-  id: qtgui_time_sink_x
+- name: low_pass_filter_0_0
+  id: low_pass_filter
   parameters:
     affinity: ''
     alias: ''
-    alpha1: '1.0'
-    alpha10: '1.0'
-    alpha2: '1.0'
-    alpha3: '1.0'
-    alpha4: '1.0'
-    alpha5: '1.0'
-    alpha6: '1.0'
-    alpha7: '1.0'
-    alpha8: '1.0'
-    alpha9: '1.0'
-    autoscale: 'False'
-    axislabels: 'True'
-    color1: blue
-    color10: dark blue
-    color2: red
-    color3: green
-    color4: black
-    color5: cyan
-    color6: magenta
-    color7: yellow
-    color8: dark red
-    color9: dark green
-    comment: ''
-    ctrlpanel: 'False'
-    entags: 'True'
-    grid: 'False'
-    gui_hint: ''
-    label1: Signal 1
-    label10: Signal 10
-    label2: Signal 2
-    label3: Signal 3
-    label4: Signal 4
-    label5: Signal 5
-    label6: Signal 6
-    label7: Signal 7
-    label8: Signal 8
-    label9: Signal 9
-    legend: 'True'
-    marker1: '-1'
-    marker10: '-1'
-    marker2: '-1'
-    marker3: '-1'
-    marker4: '-1'
-    marker5: '-1'
-    marker6: '-1'
-    marker7: '-1'
-    marker8: '-1'
-    marker9: '-1'
-    name: '""'
-    nconnections: '1'
-    size: '1024'
-    srate: samp_rate
-    stemplot: 'False'
-    style1: '1'
-    style10: '1'
-    style2: '1'
-    style3: '1'
-    style4: '1'
-    style5: '1'
-    style6: '1'
-    style7: '1'
-    style8: '1'
-    style9: '1'
-    tr_chan: '0'
-    tr_delay: '0'
-    tr_level: '0.0'
-    tr_mode: qtgui.TRIG_MODE_FREE
-    tr_slope: qtgui.TRIG_SLOPE_POS
-    tr_tag: '""'
-    type: complex
-    update_time: '0.10'
-    width1: '1'
-    width10: '1'
-    width2: '1'
-    width3: '1'
-    width4: '1'
-    width5: '1'
-    width6: '1'
-    width7: '1'
-    width8: '1'
-    width9: '1'
-    ylabel: Amplitude
-    ymax: '1'
-    ymin: '-1'
-    yunit: '""'
+    beta: '6.76'
+    comment: "Para evitar que el ruido da\xF1a la recpeci\xF3n \nde la informaci\xF3\
+      n se pone el siguiente filtro"
+    cutoff_freq: 20e3
+    decim: '10'
+    gain: '1'
+    interp: '1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samp_rate: samp_rate*10
+    type: fir_filter_fff
+    width: 10e3
+    win: firdes.WIN_HAMMING
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1011, 200]
+    coordinate: [535, 435]
     rotation: 0
     state: true
-- name: qtgui_time_sink_x_1
-  id: qtgui_time_sink_x
+- name: qtgui_freq_sink_x_0
+  id: qtgui_freq_sink_x
   parameters:
     affinity: ''
     alias: ''
@@ -330,65 +257,49 @@ blocks:
     alpha8: '1.0'
     alpha9: '1.0'
     autoscale: 'False'
+    average: '1.0'
     axislabels: 'True'
-    color1: blue
-    color10: dark blue
-    color2: red
-    color3: green
-    color4: black
-    color5: cyan
-    color6: magenta
-    color7: yellow
-    color8: dark red
-    color9: dark green
+    bw: samp_rate*100
+    color1: '"blue"'
+    color10: '"dark blue"'
+    color2: '"red"'
+    color3: '"green"'
+    color4: '"black"'
+    color5: '"cyan"'
+    color6: '"magenta"'
+    color7: '"yellow"'
+    color8: '"dark red"'
+    color9: '"dark green"'
     comment: ''
     ctrlpanel: 'False'
-    entags: 'True'
+    fc: '0'
+    fftsize: '1024'
+    freqhalf: 'True'
     grid: 'False'
     gui_hint: ''
-    label1: Signal 1
-    label10: Signal 10
-    label2: Signal 2
-    label3: Signal 3
-    label4: Signal 4
-    label5: Signal 5
-    label6: Signal 6
-    label7: Signal 7
-    label8: Signal 8
-    label9: Signal 9
+    label: Relative Gain
+    label1: ''
+    label10: ''''''
+    label2: ''''''
+    label3: ''''''
+    label4: ''''''
+    label5: ''''''
+    label6: ''''''
+    label7: ''''''
+    label8: ''''''
+    label9: ''''''
     legend: 'True'
-    marker1: '-1'
-    marker10: '-1'
-    marker2: '-1'
-    marker3: '-1'
-    marker4: '-1'
-    marker5: '-1'
-    marker6: '-1'
-    marker7: '-1'
-    marker8: '-1'
-    marker9: '-1'
-    name: "\"Se\xF1al demodulada\""
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: "\"Espectro modulaci\xF3n FM\""
     nconnections: '1'
-    size: '4000'
-    srate: samp_rate
-    stemplot: 'False'
-    style1: '1'
-    style10: '1'
-    style2: '1'
-    style3: '1'
-    style4: '1'
-    style5: '1'
-    style6: '1'
-    style7: '1'
-    style8: '1'
-    style9: '1'
+    showports: 'False'
     tr_chan: '0'
-    tr_delay: '0'
     tr_level: '0.0'
     tr_mode: qtgui.TRIG_MODE_FREE
-    tr_slope: qtgui.TRIG_SLOPE_POS
     tr_tag: '""'
-    type: float
+    type: complex
+    units: dB
     update_time: '0.10'
     width1: '1'
     width10: '1'
@@ -400,15 +311,114 @@ blocks:
     width7: '1'
     width8: '1'
     width9: '1'
-    ylabel: Amplitude
-    ymax: '1'
-    ymin: '-1'
-    yunit: '""'
+    wintype: firdes.WIN_BLACKMAN_hARRIS
+    ymax: '10'
+    ymin: '-140'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [598, 452]
+    coordinate: [1150, 83]
+    rotation: 0
+    state: true
+- name: qtgui_freq_sink_x_0_0
+  id: qtgui_freq_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    average: '1.0'
+    axislabels: 'True'
+    bw: samp_rate
+    color1: '"blue"'
+    color10: '"dark blue"'
+    color2: '"red"'
+    color3: '"green"'
+    color4: '"black"'
+    color5: '"cyan"'
+    color6: '"magenta"'
+    color7: '"yellow"'
+    color8: '"dark red"'
+    color9: '"dark green"'
+    comment: ''
+    ctrlpanel: 'False'
+    fc: '0'
+    fftsize: '1024'
+    freqhalf: 'True'
+    grid: 'False'
+    gui_hint: ''
+    label: Relative Gain
+    label1: ''
+    label10: ''''''
+    label2: ''''''
+    label3: ''''''
+    label4: ''''''
+    label5: ''''''
+    label6: ''''''
+    label7: ''''''
+    label8: ''''''
+    label9: ''''''
+    legend: 'True'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: "\"Espectro se\xF1al recuperada\""
+    nconnections: '1'
+    showports: 'False'
+    tr_chan: '0'
+    tr_level: '0.0'
+    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_tag: '""'
+    type: float
+    units: dB
+    update_time: '0.10'
+    width1: '1'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    wintype: firdes.WIN_BLACKMAN_hARRIS
+    ymax: '10'
+    ymin: '-140'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [773, 355]
+    rotation: 0
+    state: true
+- name: rational_resampler_xxx_0
+  id: rational_resampler_xxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    decim: '1'
+    fbw: '0'
+    interp: '10'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    taps: ''
+    type: fff
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [700, 193]
     rotation: 0
     state: true
 - name: virtual_sink_0
@@ -416,12 +426,12 @@ blocks:
   parameters:
     alias: ''
     comment: ''
-    stream_id: Tx
+    stream_id: '0'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1008, 295]
+    coordinate: [1160, 217]
     rotation: 0
     state: true
 - name: virtual_source_0
@@ -429,7 +439,7 @@ blocks:
   parameters:
     alias: ''
     comment: ''
-    stream_id: Tx
+    stream_id: '0'
   states:
     bus_sink: false
     bus_source: false
@@ -440,13 +450,15 @@ blocks:
 
 connections:
 - [analog_sig_source_x_0, '0', blocks_selector_0, '0']
-- [analog_wfm_rcv_0, '0', audio_sink_0, '0']
-- [analog_wfm_rcv_0, '0', qtgui_time_sink_x_1, '0']
-- [analog_wfm_tx_0, '0', qtgui_time_sink_x_0, '0']
+- [analog_wfm_rcv_0, '0', low_pass_filter_0_0, '0']
+- [analog_wfm_tx_0, '0', qtgui_freq_sink_x_0, '0']
 - [analog_wfm_tx_0, '0', virtual_sink_0, '0']
-- [blocks_selector_0, '0', analog_wfm_tx_0, '0']
+- [blocks_selector_0, '0', rational_resampler_xxx_0, '0']
 - [blocks_wavfile_source_0, '0', low_pass_filter_0, '0']
 - [low_pass_filter_0, '0', blocks_selector_0, '1']
+- [low_pass_filter_0_0, '0', audio_sink_0, '0']
+- [low_pass_filter_0_0, '0', qtgui_freq_sink_x_0_0, '0']
+- [rational_resampler_xxx_0, '0', analog_wfm_tx_0, '0']
 - [virtual_source_0, '0', analog_wfm_rcv_0, '0']
 
 metadata:

@@ -38,8 +38,8 @@ blocks:
     comment: "Permite escoger entre las dose se\xF1ales de audio \nque se estren trasmitiendo"
     gui_hint: ''
     label: mensages
-    label0: msg1
-    label1: msg2
+    label0: Audio 1
+    label1: Audio 2
     label2: ''
     label3: ''
     label4: ''
@@ -370,7 +370,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: "Seleciona una se\xF1al de audio \nque este en su computador"
-    file: C:\Users\JuanD\Downloads\test.wav
+    file: C:\Users\USUARIO\Desktop\JuanDavid\GNURadio\Multimedia\Metallica_44100.wav
     maxoutbuf: '0'
     minoutbuf: '0'
     nchan: '1'
@@ -388,7 +388,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: "Seleciona una se\xF1al de audio \nque este en su computador"
-    file: C:\Users\JuanD\Downloads\test2.wav
+    file: C:\Users\USUARIO\Desktop\JuanDavid\GNURadio\Multimedia\Foreigner_44100.wav
     maxoutbuf: '0'
     minoutbuf: '0'
     nchan: '1'
