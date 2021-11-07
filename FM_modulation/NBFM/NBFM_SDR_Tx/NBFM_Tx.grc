@@ -145,7 +145,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [656, 257]
+    coordinate: [731, 254]
     rotation: 0
     state: true
 - name: analog_sig_source_x_0
@@ -190,7 +190,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [441, 257]
+    coordinate: [482, 255]
     rotation: 0
     state: true
 - name: blocks_wavfile_source_0_0
@@ -199,7 +199,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: ''
-    file: C:\Users\JuanD\Downloads\test.wav
+    file: C:\Users\JuanD\OneDrive\Escritorio\JuanDavid\GNUradio\Multimedia\Metallica_44100.wav
     maxoutbuf: '0'
     minoutbuf: '0'
     nchan: '1'
@@ -208,7 +208,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [28, 412]
+    coordinate: [36, 409]
     rotation: 0
     state: enabled
 - name: low_pass_filter_0
@@ -218,7 +218,7 @@ blocks:
     alias: ''
     beta: '6.76'
     comment: ''
-    cutoff_freq: 15e3
+    cutoff_freq: 20e3
     decim: '1'
     gain: '1'
     interp: '1'
@@ -226,15 +226,15 @@ blocks:
     minoutbuf: '0'
     samp_rate: samp_rate
     type: fir_filter_fff
-    width: 3e3
+    width: 5e3
     win: firdes.WIN_HAMMING
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [265, 376]
+    coordinate: [257, 373]
     rotation: 0
-    state: enabled
+    state: true
 - name: osmosdr_sink_0
   id: osmosdr_sink
   parameters:
@@ -493,7 +493,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1203, 222]
+    coordinate: [1331, 219]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0
@@ -573,7 +573,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [919, 430]
+    coordinate: [1113, 440]
     rotation: 0
     state: true
 - name: rational_resampler_xxx_0
@@ -593,7 +593,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [948, 266]
+    coordinate: [1077, 263]
     rotation: 0
     state: true
 

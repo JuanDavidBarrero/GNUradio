@@ -48,7 +48,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: 105.7e6
+    value: '105690000'
   states:
     bus_sink: false
     bus_source: false
@@ -56,21 +56,25 @@ blocks:
     coordinate: [485, 14]
     rotation: 0
     state: enabled
-- name: lowPassFilter
-  id: variable_low_pass_filter_taps
+- name: freq_rds
+  id: variable_qtgui_range
   parameters:
-    beta: '6.76'
     comment: ''
-    cutoff_freq: 16e3
-    gain: '1.0'
-    samp_rate: samp_rate
-    width: 3e3
-    win: firdes.WIN_HAMMING
+    gui_hint: ''
+    label: freq_rds
+    min_len: '200'
+    orient: Qt.Horizontal
+    rangeType: float
+    start: 99.7e6
+    step: 5e3
+    stop: 107.7e6
+    value: freq
+    widget: counter_slider
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [577, 14]
+    coordinate: [593, 15]
     rotation: 0
     state: true
 - name: samp_rate
@@ -97,6 +101,27 @@ blocks:
     coordinate: [275, 13]
     rotation: 0
     state: enabled
+- name: vol
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: ''
+    label: vol
+    min_len: '200'
+    orient: Qt.Horizontal
+    rangeType: float
+    start: '1'
+    step: '1'
+    stop: '10'
+    value: '1'
+    widget: slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [753, 26]
+    rotation: 0
+    state: true
 - name: analog_nbfm_rx_0
   id: analog_nbfm_rx
   parameters:
@@ -113,7 +138,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [537, 201]
+    coordinate: [578, 318]
     rotation: 0
     state: true
 - name: audio_sink_0
@@ -130,31 +155,55 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [977, 124]
+    coordinate: [1171, 182]
     rotation: 0
     state: enabled
-- name: low_pass_filter_1
+- name: high_pass_filter_0
+  id: high_pass_filter
+  parameters:
+    affinity: ''
+    alias: ''
+    beta: '6.76'
+    comment: ''
+    cutoff_freq: '50'
+    decim: '1'
+    gain: '1'
+    interp: '1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samp_rate: samp_rate
+    type: fir_filter_fff
+    width: 1e3
+    win: firdes.WIN_HAMMING
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [970, 304]
+    rotation: 0
+    state: true
+- name: low_pass_filter_0
   id: low_pass_filter
   parameters:
     affinity: ''
     alias: ''
     beta: '6.76'
     comment: ''
-    cutoff_freq: 10e3
+    cutoff_freq: 15e3
     decim: '1'
-    gain: '2'
+    gain: vol
     interp: '1'
     maxoutbuf: '0'
     minoutbuf: '0'
     samp_rate: samp_rate
     type: fir_filter_fff
-    width: 2e3
+    width: 5e3
     win: firdes.WIN_HAMMING
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [767, 182]
+    coordinate: [782, 305]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_1
@@ -188,7 +237,7 @@ blocks:
     color9: '"dark green"'
     comment: ''
     ctrlpanel: 'False'
-    fc: '0'
+    fc: freq
     fftsize: '1024'
     freqhalf: 'True'
     grid: 'False'
@@ -234,7 +283,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [982, 314]
+    coordinate: [1211, 438]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_1
@@ -331,7 +380,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [993, 202]
+    coordinate: [1209, 291]
     rotation: 0
     state: true
 - name: rational_resampler_xxx_0
@@ -345,13 +394,13 @@ blocks:
     interp: '1'
     maxoutbuf: '0'
     minoutbuf: '0'
-    taps: lowPassFilter
+    taps: ''
     type: ccc
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [332, 201]
+    coordinate: [373, 318]
     rotation: 0
     state: true
 - name: rtlsdr_source_0
@@ -529,7 +578,7 @@ blocks:
     dc_offset_mode7: '0'
     dc_offset_mode8: '0'
     dc_offset_mode9: '0'
-    freq0: freq
+    freq0: freq_rds
     freq1: 100e6
     freq10: 100e6
     freq11: 100e6
@@ -708,15 +757,16 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [44, 149]
+    coordinate: [85, 266]
     rotation: 0
     state: true
 
 connections:
-- [analog_nbfm_rx_0, '0', low_pass_filter_1, '0']
-- [low_pass_filter_1, '0', audio_sink_0, '0']
-- [low_pass_filter_1, '0', qtgui_freq_sink_x_1, '0']
-- [low_pass_filter_1, '0', qtgui_time_sink_x_1, '0']
+- [analog_nbfm_rx_0, '0', low_pass_filter_0, '0']
+- [high_pass_filter_0, '0', audio_sink_0, '0']
+- [high_pass_filter_0, '0', qtgui_freq_sink_x_1, '0']
+- [high_pass_filter_0, '0', qtgui_time_sink_x_1, '0']
+- [low_pass_filter_0, '0', high_pass_filter_0, '0']
 - [rational_resampler_xxx_0, '0', analog_nbfm_rx_0, '0']
 - [rtlsdr_source_0, '0', rational_resampler_xxx_0, '0']
 

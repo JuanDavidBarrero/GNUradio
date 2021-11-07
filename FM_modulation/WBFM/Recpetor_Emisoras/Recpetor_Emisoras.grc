@@ -246,7 +246,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [598, 226]
+    coordinate: [603, 226]
     rotation: 0
     state: true
 - name: rtlsdr_source_0
