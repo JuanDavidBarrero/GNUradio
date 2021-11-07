@@ -304,7 +304,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: "Seleciona una se\xF1al de audio \nque este en su computador"
-    file: C:\Users\JuanD\Downloads\test.wav
+    file: C:\Users\JuanD\OneDrive\Escritorio\JuanDavid\GNUradio\Multimedia\test.44100.wav
     maxoutbuf: '0'
     minoutbuf: '0'
     nchan: '1'
@@ -322,7 +322,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: "Seleciona una se\xF1al de audio \nque este en su computador"
-    file: C:\Users\JuanD\Downloads\test2.wav
+    file: C:\Users\JuanD\OneDrive\Escritorio\JuanDavid\GNUradio\Multimedia\Foreigner_44100.wav
     maxoutbuf: '0'
     minoutbuf: '0'
     nchan: '1'

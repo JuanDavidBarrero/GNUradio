@@ -354,7 +354,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: El audio debe estar en el PC
-    file: C:\Users\JuanD\Downloads\test.wav
+    file: C:\Users\JuanD\OneDrive\Escritorio\JuanDavid\GNUradio\Multimedia\test.44100.wav
     maxoutbuf: '0'
     minoutbuf: '0'
     nchan: '1'

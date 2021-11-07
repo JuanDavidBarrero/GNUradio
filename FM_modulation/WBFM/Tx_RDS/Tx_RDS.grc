@@ -66,7 +66,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: 105.7e6
+    value: 443e6
   states:
     bus_sink: false
     bus_source: false
@@ -150,7 +150,25 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [567, 245]
+    coordinate: [567, 244]
+    rotation: 0
+    state: true
+- name: blocks_multiply_const_vxx_0
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: '5'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [211, 366]
     rotation: 0
     state: true
 - name: blocks_selector_0
@@ -182,7 +200,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: "Selecione un audio que este \nen su PC"
-    file: C:\Users\JuanD\OneDrive\Escritorio\JuanDavid\GNUradio\Multimedia\testFM_48000.wav
+    file: C:\Users\JuanD\OneDrive\Escritorio\JuanDavid\GNUradio\Multimedia\ACDC_48000.wav
     maxoutbuf: '0'
     minoutbuf: '0'
     nchan: '1'
@@ -191,7 +209,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [99, 368]
+    coordinate: [38, 459]
     rotation: 0
     state: true
 - name: high_pass_filter_0
@@ -239,7 +257,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1030, 233]
+    coordinate: [1030, 232]
     rotation: 0
     state: true
 - name: osmosdr_sink_0
@@ -501,7 +519,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1512, 200]
+    coordinate: [1512, 199]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0
@@ -705,8 +723,9 @@ blocks:
 connections:
 - [analog_sig_source_x_0, '0', blocks_selector_0, '0']
 - [analog_wfm_tx_0, '0', rational_resampler_xxx_0, '0']
+- [blocks_multiply_const_vxx_0, '0', blocks_selector_0, '1']
 - [blocks_selector_0, '0', analog_wfm_tx_0, '0']
-- [blocks_wavfile_source_0, '0', blocks_selector_0, '1']
+- [blocks_wavfile_source_0, '0', blocks_multiply_const_vxx_0, '0']
 - [high_pass_filter_0, '0', osmosdr_sink_0, '0']
 - [high_pass_filter_0, '0', qtgui_freq_sink_x_0, '0']
 - [high_pass_filter_0, '0', qtgui_time_sink_x_0, '0']

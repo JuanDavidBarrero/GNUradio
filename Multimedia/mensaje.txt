@@ -1,1 +1,1 @@
-La prueba se realizo con exito !!
+La prueba se realizo con exito desde GNU Radio GFSK !!

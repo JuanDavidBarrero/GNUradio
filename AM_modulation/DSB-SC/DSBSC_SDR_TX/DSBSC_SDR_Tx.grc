@@ -308,7 +308,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: El archivo de audio debe estar en el PC
-    file: C:\Users\USUARIO\Desktop\JuanDavid\gnu_radio\audio_44100.wav
+    file: C:\Users\JuanD\OneDrive\Escritorio\JuanDavid\GNUradio\Multimedia\test.44100.wav
     maxoutbuf: '0'
     minoutbuf: '0'
     nchan: '1'
