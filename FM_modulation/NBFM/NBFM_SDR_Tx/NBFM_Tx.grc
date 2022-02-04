@@ -199,7 +199,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: ''
-    file: C:\Users\JuanD\OneDrive\Escritorio\JuanDavid\GNUradio\Multimedia\Metallica_44100.wav
+    file: C:\Users\USUARIO\Desktop\JuanDavid\GNURadio\Multimedia\Metallica_44100.wav
     maxoutbuf: '0'
     minoutbuf: '0'
     nchan: '1'
